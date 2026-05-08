@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <!-- Concept 4a: Two hands + child head — bottom of child aligns with bottom of hands -->
+  <defs>
+    <linearGradient id="hc-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0284c7"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <!-- Left hand curve — starts bottom-left, arcs up to top-center -->
+  <path d="M12 65 Q22 20, 40 28" fill="none" stroke="url(#hc-grad)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Right hand curve — starts bottom-right, arcs up to top-center -->
+  <path d="M68 65 Q58 20, 40 28" fill="none" stroke="url(#hc-grad)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Wide red heart — same width as circle was, bottom at y=65 -->
+  <path d="M25 43 C25 34, 40 30, 40 39 C40 30, 55 34, 55 43 C55 56, 40 65, 40 65 C40 65, 25 56, 25 43Z" fill="#e53e3e"/>
+  <!-- Text -->
+  <text x="82" y="38" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="26" fill="#0c4a6e">Ceylon</text>
+  <text x="82" y="62" font-family="Arial, Helvetica, sans-serif" font-weight="300" font-size="26" fill="#0284c7">Nannies</text>
+</svg>
