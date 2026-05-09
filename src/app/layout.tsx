@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Ceylon Nannies — Trusted Childcare for Traveling Families' }],
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.png',
   },
 }
 
