@@ -1,11 +1,6 @@
-'use client'
-
 import { WhatsAppIcon } from './icons'
-import { useExchangeRate, formatLKR } from './exchange-rate'
 
 export function Pricing() {
-  const rate = useExchangeRate()
-
   const plans = [
     { duration: '2 hours', price: 30, label: 'Quick', perHour: '15.00', popular: false, useCase: 'Perfect for a quick dinner out' },
     { duration: '4 hours', price: 55, label: 'Standard', perHour: '13.75', popular: true, useCase: 'Dinner, drinks & a beach walk' },
@@ -58,8 +53,7 @@ export function Pricing() {
                 </div>
               )}
               <div className="text-sm font-medium text-ocean-500 mb-1">{plan.label}</div>
-              <div className="text-3xl font-bold text-ocean-950 mb-1">${plan.price}</div>
-              <div className="text-sm text-ocean-400 mb-1">LKR {formatLKR(plan.price, rate)}</div>
+              <div className="text-3xl font-bold text-ocean-950 mb-1">${plan.price} <span className="text-base font-normal text-ocean-400">USD</span></div>
               <div className="text-xs text-ocean-400 mb-4">{plan.duration} &middot; ${plan.perHour}/hr</div>
               <div className="pt-4 border-t border-ocean-50">
                 <p className="text-sm text-ocean-600 italic">{plan.useCase}</p>
@@ -70,14 +64,14 @@ export function Pricing() {
 
         <div className="text-center">
           <p className="text-sm text-ocean-500 mb-4">
-            Overtime after 8 hours: $12 USD / LKR {formatLKR(12, rate)} per hour.
+            Overtime after 8 hours: $12 USD per hour.
             Multi-day discount available (10% off 3+ days).
           </p>
           <p className="text-sm text-ocean-500 mb-4">
             Have 3-4 children? We provide a second nanny for focused care at a discounted rate — contact us to arrange.
           </p>
           <p className="text-xs text-ocean-400 mb-6">
-            LKR amounts based on live exchange rate (1 USD = {rate} LKR). Pay in USD or LKR — your preference.
+            Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment.
           </p>
           <a
             href="https://wa.me/14034044643?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20pricing."

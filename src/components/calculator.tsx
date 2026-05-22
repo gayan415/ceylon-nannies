@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { useExchangeRate, formatLKR } from './exchange-rate'
 import { WhatsAppIcon } from './icons'
 
 const RATES = [
@@ -12,7 +11,6 @@ const RATES = [
 ]
 
 export function Calculator() {
-  const rate = useExchangeRate()
   const [hours, setHours] = useState(4)
   const [days, setDays] = useState(1)
   const [extraHours, setExtraHours] = useState(0)
@@ -122,10 +120,7 @@ export function Calculator() {
             )}
             <div className="flex justify-between text-lg font-bold text-ocean-950 pt-2 border-t border-ocean-200">
               <span>Total</span>
-              <div className="text-right">
-                <div>${total.toFixed(2)} USD</div>
-                <div className="text-sm font-normal text-ocean-500">LKR {formatLKR(total, rate)}</div>
-              </div>
+              <span>${total.toFixed(2)} USD</span>
             </div>
           </div>
 
@@ -141,7 +136,7 @@ export function Calculator() {
           </a>
 
           <p className="text-xs text-ocean-400 text-center">
-            LKR based on live rate (1 USD = {rate} LKR). Travel surcharge applies outside Galle–Tangalle area.
+            Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment. Travel surcharge applies outside Galle–Tangalle area.
           </p>
         </div>
       </div>
