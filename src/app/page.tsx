@@ -3,6 +3,7 @@ import { Hero } from '@/components/hero'
 import { HowItWorks } from '@/components/how-it-works'
 import { CameraSection } from '@/components/camera-section'
 import { Pricing } from '@/components/pricing'
+import { Calculator } from '@/components/calculator'
 import { About } from '@/components/about'
 import { OurStory } from '@/components/our-story'
 import { TrustSection } from '@/components/trust-section'
@@ -20,6 +21,7 @@ export default function Home() {
         <HowItWorks />
         <CameraSection />
         <Pricing />
+        <Calculator />
         <About />
         <OurStory />
         <TrustSection />
