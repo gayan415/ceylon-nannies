@@ -43,6 +43,10 @@ const faqs = [
     q: 'What\'s the cancellation policy?',
     a: 'Cancel more than 2 hours before: no charge. Less than 2 hours: 50% of the booking fee. No-show: full fee.',
   },
+  {
+    q: 'What if I\'m outside your service area?',
+    a: 'We cover Galle to Tangalle at no extra travel charge. For locations outside this area, a travel surcharge applies based on distance. Message us with your location and we\'ll provide a full quote — we often work with clients to find cost-effective transport solutions.',
+  },
 ]
 
 export function FAQ() {
