@@ -17,9 +17,7 @@ export function Calculator() {
 
   const baseRate = RATES.find(r => r.hours === hours)
   const dailyRate = (baseRate?.price || 0) + (extraHours * 12)
-  const subtotal = dailyRate * days
-  const discount = days >= 3 ? subtotal * 0.1 : 0
-  const total = subtotal - discount
+  const total = dailyRate * days
 
   return (
     <section id="calculator" className="py-16 md:py-24 bg-white">
@@ -96,9 +94,6 @@ export function Calculator() {
               >
                 +
               </button>
-              {days >= 3 && (
-                <span className="text-sm text-green-600 font-medium">10% multi-day discount!</span>
-              )}
             </div>
           </div>
 
@@ -108,14 +103,10 @@ export function Calculator() {
               <span>Daily rate ({hours}hr{extraHours > 0 && ` + ${extraHours}hr overtime`})</span>
               <span>${dailyRate}/day</span>
             </div>
-            <div className="flex justify-between text-sm text-ocean-600">
-              <span>{days} day{days > 1 && 's'}</span>
-              <span>${subtotal}</span>
-            </div>
-            {discount > 0 && (
-              <div className="flex justify-between text-sm text-green-600">
-                <span>Multi-day discount (10%)</span>
-                <span>-${discount.toFixed(2)}</span>
+            {days > 1 && (
+              <div className="flex justify-between text-sm text-ocean-600">
+                <span>{days} days</span>
+                <span>${dailyRate}/day × {days}</span>
               </div>
             )}
             <div className="flex justify-between text-lg font-bold text-ocean-950 pt-2 border-t border-ocean-200">

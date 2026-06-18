@@ -65,7 +65,6 @@ export function Pricing() {
         <div className="text-center">
           <p className="text-sm text-ocean-500 mb-4">
             Overtime after 8 hours: $12 USD per hour.
-            Multi-day discount available (10% off 3+ days).
           </p>
           <p className="text-sm text-ocean-500 mb-4">
             Have 3-4 children? We provide a second nanny for focused care at a discounted rate — contact us to arrange.
