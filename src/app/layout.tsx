@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Nanny & Babysitter in Sri Lanka — In-Hotel Childcare | Mirissa, Hiriketiya, Weligama, Galle',
-  description: 'Trusted nanny and babysitter service in Sri Lanka south coast. In-hotel & in-villa childcare with live camera access. Serving Mirissa, Hiriketiya, Weligama, Unawatuna, Galle, Ahangama, Hikkaduwa & Tangalle. English-speaking, background-verified. Book via WhatsApp.',
+  description: 'Trusted nanny and babysitter service in Sri Lanka south coast. In-hotel & in-villa childcare. Live camera access available on request. Serving Mirissa, Hiriketiya, Weligama, Unawatuna, Galle, Ahangama, Hikkaduwa & Tangalle. English-speaking, background-verified. Book via WhatsApp.',
   keywords: 'nanny sri lanka, babysitter sri lanka, babysitter mirissa, nanny hiriketiya, babysitter weligama, nanny galle, childcare unawatuna, babysitter ahangama, hotel babysitter sri lanka, nanny south coast sri lanka, babysitter hikkaduwa, nanny tangalle, ceylon nannies',
   openGraph: {
-    title: 'Nanny & Babysitter in Sri Lanka — In-Hotel Childcare with Live Camera',
-    description: 'Trusted nanny and babysitter service on Sri Lanka south coast. Live camera access, English-speaking, background-verified. Mirissa, Hiriketiya, Weligama, Galle.',
+    title: 'Nanny & Babysitter in Sri Lanka — In-Hotel Childcare',
+    description: 'Trusted nanny and babysitter service on Sri Lanka south coast. English-speaking, background-verified. Live camera available on request. Mirissa, Hiriketiya, Weligama, Galle.',
     url: 'https://ceylonnannies.com',
     siteName: 'Ceylon Nannies',
     locale: 'en_US',

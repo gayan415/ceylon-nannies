@@ -15,9 +15,9 @@ export function CameraSection() {
             </h2>
 
             <p className="text-ocean-200 text-lg mb-8 leading-relaxed">
-              Our mandatory live camera system means you can check in on your little one
+              Our live camera system means you can check in on your little one
               from the restaurant, the beach, or anywhere with a phone signal.
-              Complete transparency — because trust isn&apos;t optional when it comes to your children.
+              Available on request as an add-on — because trust isn&apos;t optional when it comes to your children.
             </p>
 
             <ul className="space-y-4">
@@ -25,7 +25,7 @@ export function CameraSection() {
                 'Live video streaming directly to your phone',
                 'Video-only — call WhatsApp anytime to hear or speak',
                 'All recordings stored for 7 days',
-                'Camera is mandatory for every session — no exceptions',
+                'Optional add-on — available on request for an extra charge',
                 'Hotel WiFi + mobile data backup for reliability',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">

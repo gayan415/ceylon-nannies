@@ -4,7 +4,7 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Ceylon Nannies',
-    description: 'Professional nanny and babysitter service with live camera access on Sri Lanka south coast. In-hotel and in-villa childcare for traveling families.',
+    description: 'Professional nanny and babysitter service on Sri Lanka south coast. In-hotel and in-villa childcare for traveling families. Live camera access available on request.',
     url: 'https://ceylonnannies.com',
     telephone: '+14034044643',
     areaServed: [

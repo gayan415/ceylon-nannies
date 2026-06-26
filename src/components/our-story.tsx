@@ -56,7 +56,7 @@ export function OurStory() {
             <p>
               Ceylon Nannies is the service we designed as engineers and tested as parents. We took the
               nannies we personally trusted with our own children and built a system around them —
-              filtered to North American standards with proper procedures, live camera monitoring,
+              filtered to North American standards with proper procedures, optional live camera monitoring,
               signed agreements, and background checks.
             </p>
 

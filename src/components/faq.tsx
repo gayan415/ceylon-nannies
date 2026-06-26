@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     q: 'How does the camera system work?',
-    a: 'We set up a dedicated phone as a live camera in the room. You receive a link on your phone and can watch the live video feed anytime during the session. Video only — no audio. You can call our nanny on WhatsApp anytime to hear or speak.',
+    a: 'The live camera is an optional add-on available on request for an extra charge. When requested, we set up a dedicated phone as a live camera in the room — you receive a link on your phone and can watch the live video feed anytime during the session. Video only — no audio. You can call our nanny on WhatsApp anytime to hear or speak.',
   },
   {
-    q: 'Is the camera mandatory?',
-    a: 'Yes, always. The camera protects both you and our nanny. It runs for the entire session without exception, even if you say you don\'t need it.',
+    q: 'Is the camera included by default?',
+    a: 'No, the live camera is an optional add-on. It is available on request for an extra charge. Message us for pricing if you\'d like it included in your booking.',
   },
   {
     q: 'What ages do you accept?',

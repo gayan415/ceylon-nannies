@@ -34,7 +34,7 @@ export function ServiceArea() {
           Ceylon Nannies provides professional babysitter and nanny services across Sri Lanka&apos;s south coast.
           Whether you need a babysitter in Mirissa, a nanny in Hiriketiya, childcare in Weligama,
           a babysitter in Unawatuna, a nanny in Galle, or hotel childcare in Ahangama, Hikkaduwa, or Tangalle —
-          we come to your accommodation with live camera access for complete peace of mind.
+          we come to your accommodation — with optional live camera access available on request.
         </p>
       </div>
     </section>
