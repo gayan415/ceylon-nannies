@@ -70,14 +70,14 @@ export function Pricing() {
               </svg>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg md:text-xl font-bold text-ocean-950 mb-1">
-                New here? Welcome!
+              <h3 className="text-lg md:text-xl font-bold text-ocean-950 mb-2">
+                Welcome — let&apos;s make this vacation unforgettable
               </h3>
-              <p className="text-ocean-700 text-sm md:text-base mb-3">
-                Please reach out for a <strong>first-time client discount</strong> — we&apos;d love to welcome you into our family.
+              <p className="text-ocean-700 text-sm md:text-base mb-4">
+                We value your choice of Sri Lanka and want to make your time here memorable for life. First-time clients, please reach out — we&apos;d be honored to welcome your family to ours and treat your little ones the way we&apos;d treat our own.
               </p>
               <a
-                href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27m%20a%20first-time%20client%20—%20I%27d%20like%20to%20know%20more%20about%20your%20first-time%20discount."
+                href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27m%20a%20first-time%20client%20visiting%20Sri%20Lanka%20—%20I%27d%20love%20to%20learn%20more%20about%20your%20service."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:scale-105"
