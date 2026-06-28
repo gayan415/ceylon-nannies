@@ -36,6 +36,10 @@ const faqs = [
     a: 'Our service is conducted entirely in English. Our nanny currently raises Canadian and American children and communicates fluently in English daily.',
   },
   {
+    q: 'Do you offer a first-time discount?',
+    a: 'Yes! As we welcome new families to Ceylon Nannies, we offer a first-time client discount. Message us on WhatsApp and let us know about your stay — we\'ll tailor a rate that works for your family.',
+  },
+  {
     q: 'How do I pay?',
     a: 'Payment is due at the time of booking, during the initial intro call. We accept e-transfer or bank transfer.',
   },

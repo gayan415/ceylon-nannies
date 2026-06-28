@@ -62,6 +62,33 @@ export function Pricing() {
           ))}
         </div>
 
+        <div className="mb-10 bg-gradient-to-br from-sand-50 to-ocean-50 border-2 border-sand-200 rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+            <div className="flex-shrink-0 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
+              <svg className="w-7 h-7 text-sand-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg md:text-xl font-bold text-ocean-950 mb-1">
+                New here? Welcome!
+              </h3>
+              <p className="text-ocean-700 text-sm md:text-base mb-3">
+                Please reach out for a <strong>first-time client discount</strong> — we&apos;d love to welcome you into our family.
+              </p>
+              <a
+                href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27m%20a%20first-time%20client%20—%20I%27d%20like%20to%20know%20more%20about%20your%20first-time%20discount."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:scale-105"
+              >
+                <WhatsAppIcon className="w-4 h-4" />
+                Message Us on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center">
           <p className="text-sm text-ocean-500 mb-4">
             Overtime after 8 hours: $12 USD per hour.
