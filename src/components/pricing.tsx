@@ -96,18 +96,9 @@ export function Pricing() {
           <p className="text-sm text-ocean-500 mb-4">
             Have 3-4 children? We provide a second nanny for focused care at a discounted rate — contact us to arrange.
           </p>
-          <p className="text-xs text-ocean-400 mb-6">
+          <p className="text-xs text-ocean-400">
             Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment.
           </p>
-          <a
-            href="https://wa.me/14034044643?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20pricing."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:scale-105"
-          >
-            <WhatsAppIcon className="w-5 h-5" />
-            Book a Session
-          </a>
         </div>
       </div>
     </section>
