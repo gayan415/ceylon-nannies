@@ -6,11 +6,11 @@ export function About() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-ocean-950 mb-6">
               Experienced with{' '}
-              <span className="text-ocean-600">Canadian &amp; American Children</span>
+              <span className="text-ocean-600">Canadian, American &amp; Australian Children</span>
             </h2>
 
             <p className="text-ocean-700 text-lg mb-6 leading-relaxed">
-              Our nanny currently cares for children from Canada and the United States daily.
+              Our nanny currently cares for children from Canada, the United States, and Australia daily.
               She communicates fluently in English, understands Western parenting expectations,
               and is familiar with the routines, foods, and comfort that international families expect.
             </p>
@@ -19,7 +19,7 @@ export function About() {
               {[
                 { label: 'Age range', value: '0-6 years (all ages welcome)' },
                 { label: 'Languages', value: 'Fluent English + Sinhala' },
-                { label: 'Experience', value: 'Currently raising Canadian & American children' },
+                { label: 'Experience', value: 'Currently raising Canadian, American & Australian children' },
                 { label: 'Capacity', value: 'Maximum 2 children per session (additional nanny for 3+)' },
                 { label: 'Availability', value: 'Any time, any day — year-round' },
                 { label: 'Background', value: 'Police-verified and background-checked' },
@@ -43,12 +43,12 @@ export function About() {
                   <div className="text-xs text-ocean-500">Years of life experience</div>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-ocean-100">
-                  <div className="text-2xl font-bold text-ocean-900">3</div>
+                  <div className="text-2xl font-bold text-ocean-900">4</div>
                   <div className="text-xs text-ocean-500">Children currently caring for</div>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-ocean-100">
-                  <div className="text-2xl font-bold text-ocean-900">2</div>
-                  <div className="text-xs text-ocean-500">Countries (Canada & USA)</div>
+                  <div className="text-2xl font-bold text-ocean-900">3</div>
+                  <div className="text-xs text-ocean-500">Countries (Canada, USA & Australia)</div>
                 </div>
               </div>
             </div>

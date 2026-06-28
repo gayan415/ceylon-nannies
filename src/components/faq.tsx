@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'What language does the nanny speak?',
-    a: 'Our service is conducted entirely in English. Our nanny currently raises Canadian and American children and communicates fluently in English daily.',
+    a: 'Our service is conducted entirely in English. Our nanny currently raises Canadian, American, and Australian children and communicates fluently in English daily.',
   },
   {
     q: 'I\'m a first-time client — how do I get started?',
