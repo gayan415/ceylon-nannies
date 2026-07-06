@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
 import { Footer } from '@/components/footer'
-import { WhatsAppIcon } from '@/components/icons'
 
 export const metadata: Metadata = {
   title: 'Join Our Team — Ceylon Nannies',
@@ -41,24 +40,11 @@ export default function CareersPage() {
             south coast.
           </p>
 
-          <p className="text-ocean-600 leading-relaxed mb-10">
+          <p className="text-ocean-600 leading-relaxed">
             We&apos;re putting together the details of what we&apos;re looking for.
-            Full openings will be posted here soon. If you&apos;d love to be part of a
-            caring, professional, family-run team, we&apos;d be delighted to hear from you.
-          </p>
-
-          <a
-            href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27m%20interested%20in%20joining%20your%20team%20as%20a%20nanny."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:scale-105 shadow-lg shadow-green-500/25"
-          >
-            <WhatsAppIcon className="w-5 h-5" />
-            Express Your Interest
-          </a>
-
-          <p className="text-sm text-ocean-500 mt-4">
-            Message us on WhatsApp and we&apos;ll be in touch when openings go live.
+            Full openings will be posted here soon — please check back. If you&apos;d
+            love to be part of a caring, professional, family-run team, we&apos;d be
+            delighted to welcome you when applications open.
           </p>
         </div>
       </main>
