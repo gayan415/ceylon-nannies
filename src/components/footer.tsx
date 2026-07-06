@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { WhatsAppIcon } from './icons'
 import { Logo } from './logo'
 import { SERVICE_AREAS } from '@/lib/constants'
@@ -56,6 +57,11 @@ export function Footer() {
           <p className="text-xs text-ocean-500">
             &copy; {new Date().getFullYear()} Ceylon Nannies. All rights reserved.
           </p>
+          <div className="flex items-center gap-4 text-xs text-ocean-400">
+            <Link href="/careers" className="hover:text-white transition-colors">Join Our Team</Link>
+            <span className="text-ocean-700">&middot;</span>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          </div>
           <p className="text-xs text-ocean-500">
             Service conducted in English for your child&apos;s safety.
           </p>

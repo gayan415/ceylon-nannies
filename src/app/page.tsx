@@ -6,6 +6,7 @@ import { Pricing } from '@/components/pricing'
 import { Calculator } from '@/components/calculator'
 import { About } from '@/components/about'
 import { OurStory } from '@/components/our-story'
+import { Reviews } from '@/components/reviews'
 import { TrustSection } from '@/components/trust-section'
 import { ServiceArea } from '@/components/service-area'
 import { FAQ } from '@/components/faq'
@@ -24,6 +25,7 @@ export default function Home() {
         <Calculator />
         <About />
         <OurStory />
+        <Reviews />
         <TrustSection />
         <ServiceArea />
         <FAQ />

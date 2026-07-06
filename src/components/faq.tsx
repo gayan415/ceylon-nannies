@@ -5,7 +5,7 @@ import { useState } from 'react'
 const faqs = [
   {
     q: 'What do I need to provide?',
-    a: 'You provide all food, drinks, diapers, wipes, and any medication for your child. This ensures allergy safety — we never feed your child anything you haven\'t approved.',
+    a: 'You provide all food, drinks, diapers, wipes, and any medication for your child — this ensures allergy safety, as we never feed your child anything you haven\'t approved. It also helps to leave a few notes on your child\'s routine (nap times, comfort items, bedtime) and an emergency contact number so your nanny can reach you or a local point of contact if needed.',
   },
   {
     q: 'How does the camera system work?',
@@ -20,8 +20,8 @@ const faqs = [
     a: 'We care for children aged 0-6 years. Our nanny is experienced with all ages in this range, from infants to active toddlers.',
   },
   {
-    q: 'How many children per session?',
-    a: 'Maximum 2 children per nanny. This ensures personalized, focused attention. If you have 3-4 children, we provide a second nanny at a discounted rate — contact us to arrange.',
+    q: 'How many children per nanny?',
+    a: 'Up to 2 children in our nanny\'s sole care — this keeps attention personal and focused. A third child can be looked after when a parent is present as a helper, or we can arrange a second nanny for larger groups. Just tell us how many little ones you have and we\'ll find the right fit.',
   },
   {
     q: 'What if my child has allergies?',
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'What language does the nanny speak?',
-    a: 'Our service is conducted entirely in English. Our nanny currently raises Canadian, American, and Australian children and communicates fluently in English daily.',
+    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Your nanny currently raises Canadian, American, and Australian children and communicates fluently in English daily.',
   },
   {
     q: 'I\'m a first-time client — how do I get started?',
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: 'How do I pay?',
-    a: 'Payment is due at the time of booking, during the initial intro call. We accept e-transfer or bank transfer.',
+    a: 'We keep payment simple and flexible — caring for your child always comes first. Most families pay cash at your accommodation on the day of the session. Bank transfer is available on request (payments in LKR are calculated at the Sri Lanka Central Bank rate on the day). We\'ll confirm all the details with you before your booking so there are no surprises.',
   },
   {
     q: 'What\'s the cancellation policy?',
