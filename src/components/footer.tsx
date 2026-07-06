@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { WhatsAppIcon } from './icons'
 import { Logo } from './logo'
-import { SERVICE_AREAS } from '@/lib/constants'
+import { TOWNS } from '@/lib/towns'
 
 export function Footer() {
   return (
@@ -22,8 +22,12 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-3">Service Areas</h3>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-1.5 text-sm text-ocean-400">
-              {SERVICE_AREAS.map((area) => (
-                <li key={area}>{area}</li>
+              {TOWNS.map((town) => (
+                <li key={town.slug}>
+                  <Link href={`/${town.slug}`} className="hover:text-white transition-colors">
+                    {town.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
