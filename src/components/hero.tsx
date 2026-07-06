@@ -20,7 +20,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-ocean-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Professional in-hotel nanny service. Live camera access available on request (extra charge).
+          Professional in-hotel nanny and babysitter service. Live camera access available on request (extra charge).
           Enjoy your evening — they&apos;re in safe hands.
         </p>
 
