@@ -7,6 +7,7 @@ import { StructuredData } from '@/components/structured-data'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.ceylonnannies.com'),
   title: 'Nanny & Babysitter in Sri Lanka — In-Hotel Childcare | Mirissa, Hiriketiya, Weligama, Galle',
   description: 'Trusted nanny and babysitter service in Sri Lanka south coast. In-hotel & in-villa childcare. Live camera access available on request. Serving Mirissa, Hiriketiya, Weligama, Unawatuna, Galle, Ahangama, Hikkaduwa & Tangalle. English-speaking, background-verified. Book via WhatsApp.',
   keywords: 'nanny sri lanka, babysitter sri lanka, babysitter mirissa, nanny hiriketiya, babysitter weligama, nanny galle, childcare unawatuna, babysitter ahangama, hotel babysitter sri lanka, nanny south coast sri lanka, babysitter hikkaduwa, nanny tangalle, ceylon nannies',

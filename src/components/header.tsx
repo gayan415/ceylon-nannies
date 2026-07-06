@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { WhatsAppIcon } from './icons'
 import { Logo } from './logo'
 
@@ -15,7 +16,9 @@ export function Header() {
           <a href="#pricing" className="hover:text-ocean-600 transition-colors">Pricing</a>
           <a href="#about" className="hover:text-ocean-600 transition-colors">About</a>
           <a href="#our-story" className="hover:text-ocean-600 transition-colors">Our Story</a>
+          <a href="#reviews" className="hover:text-ocean-600 transition-colors">Reviews</a>
           <a href="#faq" className="hover:text-ocean-600 transition-colors">FAQ</a>
+          <Link href="/careers" className="hover:text-ocean-600 transition-colors">Join Our Team</Link>
         </nav>
 
         <a
