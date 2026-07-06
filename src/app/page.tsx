@@ -8,7 +8,6 @@ import { About } from '@/components/about'
 import { OurStory } from '@/components/our-story'
 import { Reviews } from '@/components/reviews'
 import { TrustSection } from '@/components/trust-section'
-import { ServiceArea } from '@/components/service-area'
 import { AreasWeServe } from '@/components/areas-we-serve'
 import { FAQ } from '@/components/faq'
 import { Footer } from '@/components/footer'
@@ -28,7 +27,6 @@ export default function Home() {
         <OurStory />
         <Reviews />
         <TrustSection />
-        <ServiceArea />
         <AreasWeServe />
         <FAQ />
       </main>
