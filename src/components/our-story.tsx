@@ -55,15 +55,15 @@ export function OurStory() {
 
             <p>
               Ceylon Nannies is the service we designed as engineers and tested as parents. We took the
-              nannies we personally trusted with our own children and built a system around them —
-              filtered to North American standards with proper procedures, optional live camera monitoring,
+              nanny we personally trusted with our own children and built a proper system around her —
+              filtered to North American standards with proper procedures, optional live camera access,
               signed agreements, and background checks.
             </p>
 
             <p>
-              Every nanny on our team has been vetted the same way we&apos;d vet someone caring for our
-              own kids. Because they <em>did</em> care for our own kids first. That&apos;s our
-              standard — if we wouldn&apos;t leave our children with them, we won&apos;t send them to yours.
+              Your nanny has been vetted the same way we&apos;d vet someone caring for our
+              own kids. Because she <em>did</em> care for our own kids first. That&apos;s our
+              standard — if we wouldn&apos;t leave our children with her, we won&apos;t send her to yours.
             </p>
 
             <div className="border-l-4 border-ocean-400 pl-6 my-8">
@@ -76,9 +76,9 @@ export function OurStory() {
 
             <p>
               Today, we serve families from Europe, Australia, North America, and beyond — all along
-              Sri Lanka&apos;s south coast from Galle to Tangalle. Our nannies speak fluent English,
-              our cameras run live for every session, and every booking comes with the same care and
-              accountability we demand for our own family.
+              Sri Lanka&apos;s south coast from Galle to Tangalle. Your nanny speaks fluent English,
+              optional live camera access lets you check in anytime, and every booking comes with the
+              same care and accountability we demand for our own family.
             </p>
 
             <p className="text-ocean-600 text-sm">

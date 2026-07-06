@@ -39,7 +39,7 @@ export function Footer() {
               Message us on WhatsApp
             </a>
             <p className="text-sm text-ocean-400">
-              WhatsApp us anytime — we typically respond within 1 hour.
+              WhatsApp us anytime — we respond as quickly as possible, usually within a few hours.
             </p>
             <div className="flex items-center gap-3 mt-4">
               <a href="https://instagram.com/ceylonnannies" target="_blank" rel="noopener noreferrer" className="text-ocean-400 hover:text-white transition-colors">
