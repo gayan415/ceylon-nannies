@@ -16,6 +16,12 @@ const reviews: Review[] = [
     rating: 5,
     text: 'We had an amazing experience with Ceylon Nannies! The communication was so quick via WhatsApp and everything was booked so easily. Mahesha was incredible — experienced, kind, and fun with our little boy. I would highly recommend Ceylon Nannies to anyone needing a nanny for a night out while on holiday.',
   },
+  {
+    author: 'Felicity',
+    location: 'holidaying in Sri Lanka',
+    rating: 5,
+    text: 'We had such a lovely experience with Ceylon Nannies during our holiday in Sri Lanka. We used them for two afternoons, and our three children absolutely loved spending time with the nannies. They were kind, caring, and wonderful with the kids, and it gave us complete peace of mind knowing they were so well looked after while we had a little time together. Thank you for taking such great care of our family. We’d happily recommend Ceylon Nannies to anyone travelling with children.',
+  },
 ]
 
 const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
@@ -74,7 +80,7 @@ export function Reviews() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-1 max-w-2xl mx-auto mb-10">
+        <div className="grid gap-6 md:grid-cols-2 mb-10 items-start">
           {reviews.map((review) => (
             <ReviewCard key={review.author} review={review} />
           ))}
