@@ -6,6 +6,21 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.ceylonnannies.com/nanny-colombo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ceylonnannies.com/nanny-negombo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ceylonnannies.com/nanny-kandy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.ceylonnannies.com/nanny-galle</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,6 +52,11 @@
   </url>
   <url>
     <loc>https://www.ceylonnannies.com/nanny-tangalle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ceylonnannies.com/nanny-hambantota</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

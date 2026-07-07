@@ -127,7 +127,7 @@ export function Calculator() {
           </a>
 
           <p className="text-xs text-ocean-400 text-center">
-            Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment. Travel surcharge applies outside Galle–Tangalle area.
+            Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment. A travel charge may apply depending on your location — message us for a full quote.
           </p>
         </div>
       </div>

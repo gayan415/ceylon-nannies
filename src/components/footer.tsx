@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-lg font-bold text-white">Ceylon Nannies</span>
             </div>
             <p className="text-sm text-ocean-400 leading-relaxed">
-              Trusted childcare for traveling families — we come to your hotel, villa, or Airbnb on Sri Lanka&apos;s south coast.
+              Premier childcare for traveling families — we come to your hotel, villa, or Airbnb across Sri Lanka.
               English service. Live camera available on request.
             </p>
           </div>
