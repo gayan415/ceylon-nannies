@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.ceylonnannies.com'),
   title: 'Nanny & Babysitter in Sri Lanka — Premier In-Hotel Childcare | Colombo, Kandy, Galle & South Coast',
   description: 'Premier English-speaking nanny and babysitter service across Sri Lanka. In-hotel, in-villa & in-home childcare in Colombo, Negombo, Kandy, Galle, Mirissa, Hiriketiya, Weligama, Unawatuna, Tangalle, Hambantota and more. Background-verified. Live camera on request. Book via WhatsApp.',
-  keywords: 'nanny sri lanka, babysitter sri lanka, nannies sri lanka, nanny colombo, babysitter colombo, nanny kandy, babysitter negombo, babysitter mirissa, nanny hiriketiya, babysitter weligama, nanny galle, childcare unawatuna, nanny hambantota, hotel babysitter sri lanka, nanny near me, babysitter near me, nanny service for kids, ceylon nannies',
+  keywords: 'nanny sri lanka, babysitter sri lanka, nannies sri lanka, nanny colombo, babysitter colombo, nanny kandy, nanny ella, babysitter negombo, babysitter mirissa, nanny hiriketiya, babysitter weligama, nanny galle, childcare unawatuna, nanny hambantota, hotel babysitter sri lanka, nanny near me, babysitter near me, nanny service for kids, ceylon nannies',
   openGraph: {
     title: 'Nanny & Babysitter in Sri Lanka — Premier In-Hotel Childcare',
     description: 'Premier English-speaking nanny and babysitter service across Sri Lanka. Background-verified. Live camera on request. Colombo, Kandy, Galle, Mirissa, Hiriketiya & more.',

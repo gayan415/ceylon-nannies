@@ -202,6 +202,23 @@ export const TOWNS: Town[] = [
     ],
     ctaText: 'Message us on WhatsApp — we’re in Kandy',
   },
+  {
+    slug: 'nanny-ella',
+    name: 'Ella',
+    region: 'Hill Country',
+    metaTitle: 'Nanny & Babysitter in Ella, Sri Lanka — Hill-Country Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Ella. In-hotel and in-villa childcare near Nine Arch Bridge, Little Adam’s Peak, and the tea hills. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Ella, Sri Lanka',
+    paragraphs: [
+      'Ella is the hill country at its most magical — cool mountain air, the famous Nine Arch Bridge, Little Adam’s Peak at sunrise, and that iconic train ride winding through emerald tea fields. It’s a favourite stop for families making their way through the highlands.',
+      'But early hikes and long, scenic train journeys aren’t always easy with a little one in tow.',
+      'Our nanny comes to your hotel or villa anywhere around Ella. Catch the sunrise from Little Adam’s Peak, take the classic train to Demodara, or linger over a slow breakfast with a view — while your child stays happy and rested on their own schedule, cared for by someone warm, experienced, and fluent in English.',
+      'Every booking starts with a video introduction so there are no strangers on day one, your routines are followed exactly, and optional live camera access lets you check in from the trail, the train, or the tea fields.',
+      'Take in the view from the top. We’ll keep the little ones content below.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Ella',
+  },
 ]
 
 // Prefilled per-town WhatsApp link (spec-defined message).

@@ -11,6 +11,7 @@ export function StructuredData() {
       { '@type': 'City', name: 'Colombo, Sri Lanka' },
       { '@type': 'City', name: 'Negombo, Sri Lanka' },
       { '@type': 'City', name: 'Kandy, Sri Lanka' },
+      { '@type': 'City', name: 'Ella, Sri Lanka' },
       { '@type': 'City', name: 'Galle, Sri Lanka' },
       { '@type': 'City', name: 'Unawatuna, Sri Lanka' },
       { '@type': 'City', name: 'Hikkaduwa, Sri Lanka' },

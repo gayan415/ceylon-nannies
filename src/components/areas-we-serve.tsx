@@ -83,9 +83,9 @@ export function AreasWeServe() {
         <p className="text-center text-xs text-ocean-300 mt-8 max-w-2xl mx-auto leading-relaxed">
           Ceylon Nannies provides premier English-speaking babysitter and nanny services across
           Sri Lanka. Whether you need a nanny in Colombo, a babysitter in Negombo, childcare in
-          Kandy, or a trusted nanny in Galle, Mirissa, Hiriketiya, Weligama, Unawatuna, Tangalle,
-          or Hambantota — we come to your hotel, villa, or home, with optional live camera access
-          available on request.
+          Kandy or Ella, or a trusted nanny in Galle, Mirissa, Hiriketiya, Weligama, Unawatuna,
+          Tangalle, or Hambantota — we come to your hotel, villa, or home, with optional live
+          camera access available on request.
         </p>
       </div>
     </section>
