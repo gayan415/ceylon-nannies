@@ -54,16 +54,16 @@ export function OurStory() {
             </p>
 
             <p>
-              Ceylon Nannies is the service we designed as engineers and tested as parents. We took the
-              nanny we personally trusted with our own children and built a proper system around her —
-              filtered to North American standards with proper procedures, optional live camera access,
-              signed agreements, and background checks.
+              Ceylon Nannies is the service we designed as engineers and tested as parents. It began
+              with the nanny we personally trusted with our own children — and from there we built a
+              proper standard: North American procedures, optional live camera access, signed
+              agreements, and background checks for every nanny who joins us.
             </p>
 
             <p>
-              Your nanny has been vetted the same way we&apos;d vet someone caring for our
-              own kids. Because she <em>did</em> care for our own kids first. That&apos;s our
-              standard — if we wouldn&apos;t leave our children with her, we won&apos;t send her to yours.
+              We keep the team small and hand-picked on purpose. Every nanny is vetted the same way
+              we&apos;d vet someone caring for our own kids — because that&apos;s exactly the bar we
+              started with. If we wouldn&apos;t leave our children with them, we won&apos;t send them to yours.
             </p>
 
             <div className="border-l-4 border-ocean-400 pl-6 my-8">
@@ -76,7 +76,7 @@ export function OurStory() {
 
             <p>
               Today, we serve families from Europe, Australia, North America, and beyond — across
-              Sri Lanka, from Colombo and Kandy to the south coast. Your nanny speaks fluent English,
+              Sri Lanka, from Colombo and Kandy to the south coast. Our nannies speak fluent English,
               optional live camera access lets you check in anytime, and every booking comes with the
               same care and accountability we demand for our own family.
             </p>

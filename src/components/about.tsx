@@ -5,24 +5,31 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-ocean-950 mb-6">
-              Experienced with{' '}
-              <span className="text-ocean-600">Canadian, American &amp; Australian Children</span>
+              Hand-Picked Nannies —{' '}
+              <span className="text-ocean-600">Never a Faceless Agency</span>
             </h2>
 
             <p className="text-ocean-700 text-lg mb-6 leading-relaxed">
-              Our nanny currently cares for children from Canada, the United States, and Australia daily.
-              She communicates fluently in English, understands Western parenting expectations,
-              and is familiar with the routines, foods, and comfort that international families expect.
+              We&apos;re a small, boutique team — not an agency with a roster of strangers.
+              Every nanny is someone we&apos;d trust with our own children, because they&apos;ve
+              cared for children from Canada, the United States, and Australia. Fluent English,
+              Western parenting standards, and the warmth that makes a new place feel like home.
+            </p>
+
+            <p className="text-ocean-700 text-lg mb-6 leading-relaxed">
+              Because our team is small and personally vetted, you get the one thing agencies
+              can&apos;t promise: a nanny we truly know and stand behind — introduced to you on
+              a video call before day one.
             </p>
 
             <div className="space-y-4">
               {[
                 { label: 'Age range', value: '0-6 years (all ages welcome)' },
                 { label: 'Languages', value: 'Fluent English + Sinhala' },
-                { label: 'Experience', value: 'Currently raising Canadian, American & Australian children' },
-                { label: 'Capacity', value: 'Maximum 2 children per session (additional nanny for 3+)' },
-                { label: 'Availability', value: 'Any time, any day — year-round' },
-                { label: 'Background', value: 'Police-verified and background-checked' },
+                { label: 'Experience', value: 'Raising Canadian, American & Australian children' },
+                { label: 'Capacity', value: 'Maximum 2 children per nanny (more with a second nanny)' },
+                { label: 'Availability', value: 'Any time, any day — year-round, island-wide' },
+                { label: 'Vetting', value: 'Every nanny police-verified and background-checked' },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-ocean-500 mt-2.5 flex-shrink-0" />
@@ -36,20 +43,22 @@ export function About() {
           </div>
 
           <div className="bg-ocean-50 rounded-3xl p-8">
-            <div className="space-y-6">
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-ocean-100">
-                  <div className="text-2xl font-bold text-ocean-900">46</div>
-                  <div className="text-xs text-ocean-500">Years of life experience</div>
-                </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-ocean-100">
-                  <div className="text-2xl font-bold text-ocean-900">4</div>
-                  <div className="text-xs text-ocean-500">Children currently caring for</div>
-                </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-ocean-100">
-                  <div className="text-2xl font-bold text-ocean-900">3</div>
-                  <div className="text-xs text-ocean-500">Countries (Canada, USA & Australia)</div>
-                </div>
+            <div className="grid grid-cols-2 gap-4 text-center">
+              <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
+                <div className="text-2xl font-bold text-ocean-900">5.0 ★</div>
+                <div className="text-xs text-ocean-500 mt-1">Rated on Google</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
+                <div className="text-2xl font-bold text-ocean-900">100%</div>
+                <div className="text-xs text-ocean-500 mt-1">Background-verified nannies</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
+                <div className="text-2xl font-bold text-ocean-900">🇨🇦 🇺🇸 🇦🇺</div>
+                <div className="text-xs text-ocean-500 mt-1">Families we&apos;ve cared for</div>
+              </div>
+              <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
+                <div className="text-2xl font-bold text-ocean-900">Island-wide</div>
+                <div className="text-xs text-ocean-500 mt-1">Colombo to the south coast</div>
               </div>
             </div>
           </div>
