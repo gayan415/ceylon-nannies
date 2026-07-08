@@ -6,8 +6,7 @@ import { HowItWorks } from './how-it-works'
 import { TrackedWhatsAppCTA } from './tracked-whatsapp-cta'
 import { WhatsAppButton } from './whatsapp-button'
 import { TOWNS, townWhatsAppUrl, type Town } from '@/lib/towns'
-
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
+import { REVIEWS, GOOGLE_MAPS_URL } from '@/lib/reviews'
 
 function Stars() {
   return (
@@ -63,7 +62,7 @@ export function TownPage({ town }: { town: Town }) {
           <div className="max-w-3xl mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-ocean-100 text-ocean-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              {town.name} · Sri Lanka&apos;s South Coast
+              {town.name} · Sri Lanka
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 leading-tight mb-6">
               {town.h1}
@@ -84,32 +83,26 @@ export function TownPage({ town }: { town: Town }) {
           </div>
         </section>
 
-        {/* How it works in {Town} */}
-        <div className="bg-white">
-          <div className="max-w-6xl mx-auto px-4 pt-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-ocean-950 text-center">
-              How it works in {town.name}
-            </h2>
-          </div>
-          <HowItWorks />
-        </div>
-
-        {/* Pricing (shared component) */}
-        <Pricing />
-
-        {/* Short review card */}
-        <section className="py-16 md:py-20 bg-ocean-950">
-          <div className="max-w-2xl mx-auto px-4">
-            <div className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center">
-              <div className="flex justify-center mb-4">
-                <Stars />
-              </div>
-              <blockquote className="text-ocean-100 text-lg leading-relaxed mb-4">
-                &ldquo;Mahesha was incredible — experienced, kind, and fun with our little
-                boy. I would highly recommend Ceylon Nannies to anyone needing a nanny while
-                on holiday.&rdquo;
-              </blockquote>
-              <div className="text-sm text-ocean-400 mb-6">— Steph, visiting from Melbourne 🇦🇺</div>
+        {/* Google reviews — placed high (right after intro) to build trust early */}
+        <section className="py-14 md:py-16 bg-ocean-950">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="grid gap-6 md:grid-cols-2 items-start mb-8">
+              {REVIEWS.map((review) => (
+                <div
+                  key={review.author}
+                  className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center md:text-left"
+                >
+                  <div className="flex justify-center md:justify-start mb-4">
+                    <Stars />
+                  </div>
+                  <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed mb-4">
+                    &ldquo;{review.text}&rdquo;
+                  </blockquote>
+                  <div className="text-sm text-ocean-400">— {review.author}, {review.location}</div>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center">
               <a
                 href={GOOGLE_MAPS_URL}
                 target="_blank"
@@ -127,6 +120,19 @@ export function TownPage({ town }: { town: Town }) {
             </div>
           </div>
         </section>
+
+        {/* How it works in {Town} */}
+        <div className="bg-white">
+          <div className="max-w-6xl mx-auto px-4 pt-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-ocean-950 text-center">
+              How it works in {town.name}
+            </h2>
+          </div>
+          <HowItWorks />
+        </div>
+
+        {/* Pricing (shared component) */}
+        <Pricing />
 
         {/* FAQ link + final CTA */}
         <section className="py-16 md:py-20 bg-white">
@@ -149,7 +155,7 @@ export function TownPage({ town }: { town: Town }) {
         <section className="py-12 bg-ocean-50 border-t border-ocean-100">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-sm font-medium text-ocean-500 mb-4">
-              We also serve these areas on Sri Lanka&apos;s south coast
+              We also serve these areas across Sri Lanka
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2.5">
               {otherTowns.map((t) => (

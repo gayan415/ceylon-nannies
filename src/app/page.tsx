@@ -19,13 +19,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Reviews />
         <HowItWorks />
         <CameraSection />
         <Pricing />
         <Calculator />
         <About />
         <OurStory />
-        <Reviews />
         <TrustSection />
         <AreasWeServe />
         <FAQ />

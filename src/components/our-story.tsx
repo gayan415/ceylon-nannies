@@ -75,14 +75,14 @@ export function OurStory() {
             </div>
 
             <p>
-              Today, we serve families from Europe, Australia, North America, and beyond — all along
-              Sri Lanka&apos;s south coast from Galle to Tangalle. Your nanny speaks fluent English,
+              Today, we serve families from Europe, Australia, North America, and beyond — across
+              Sri Lanka, from Colombo and Kandy to the south coast. Your nanny speaks fluent English,
               optional live camera access lets you check in anytime, and every booking comes with the
               same care and accountability we demand for our own family.
             </p>
 
             <p className="text-ocean-600 text-sm">
-              Founded by Sri Lankan-Canadian engineers. Based in Alberta, Canada. Operating on Sri Lanka&apos;s south coast.
+              Founded by Sri Lankan-Canadian engineers. Based in Alberta, Canada. Operating across Sri Lanka.
             </p>
           </div>
         </div>

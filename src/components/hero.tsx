@@ -11,16 +11,16 @@ export function Hero() {
       <div className="relative max-w-4xl mx-auto px-4 text-center">
         <div className="inline-flex items-center gap-2 bg-ocean-100 text-ocean-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          Now serving Sri Lanka&apos;s South Coast
+          Serving families across Sri Lanka
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold text-ocean-950 leading-tight mb-6">
-          Trusted Childcare for{' '}
+          Premier Childcare for{' '}
           <span className="text-ocean-600">Traveling Families</span>
         </h1>
 
         <p className="text-lg md:text-xl text-ocean-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Professional in-hotel nanny and babysitter service. Live camera access available on request (extra charge).
+          Premier in-hotel nanny and babysitter service across Sri Lanka. Live camera access available on request.
           Enjoy your evening — they&apos;re in safe hands.
         </p>
 

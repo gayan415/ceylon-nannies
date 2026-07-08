@@ -1,24 +1,5 @@
 import { WhatsAppIcon } from './icons'
-
-// Review data is kept separate from the markup so that when we later automate
-// (Google Places API or a reviews widget), only this array changes — not the design.
-type Review = {
-  author: string
-  location: string
-  rating: number // out of 5
-  text: string
-}
-
-const reviews: Review[] = [
-  {
-    author: 'Steph',
-    location: 'visiting from Melbourne 🇦🇺',
-    rating: 5,
-    text: 'We had an amazing experience with Ceylon Nannies! The communication was so quick via WhatsApp and everything was booked so easily. Mahesha was incredible — experienced, kind, and fun with our little boy. I would highly recommend Ceylon Nannies to anyone needing a nanny for a night out while on holiday.',
-  },
-]
-
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
+import { REVIEWS, GOOGLE_MAPS_URL, type Review } from '@/lib/reviews'
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -74,8 +55,8 @@ export function Reviews() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-1 max-w-2xl mx-auto mb-10">
-          {reviews.map((review) => (
+        <div className="grid gap-6 md:grid-cols-2 mb-10 items-start">
+          {REVIEWS.map((review) => (
             <ReviewCard key={review.author} review={review} />
           ))}
         </div>

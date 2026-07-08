@@ -1,9 +1,11 @@
-// Town landing page data. Copy is verbatim from the approved spec.
-// One entry per page — the shared TownPage template renders them all.
+// Town/city landing page data. One entry per page — the shared TownPage
+// template renders them all. South-coast towns use approved verbatim copy;
+// newer city pages (Colombo, Negombo, Kandy, Hambantota) use on-brand drafted copy.
 
 export type Town = {
   slug: string // e.g. 'nanny-galle' → /nanny-galle
   name: string // e.g. 'Galle'
+  region: 'South Coast' | 'Western' | 'Hill Country'
   metaTitle: string
   metaDescription: string
   h1: string
@@ -15,9 +17,10 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-galle',
     name: 'Galle',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Galle, Sri Lanka — Hotel & Villa Childcare',
     metaDescription:
-      'Trusted English-speaking nanny service in Galle. In-hotel and in-villa childcare near Galle Fort, Unawatuna Road and beyond. Message us on WhatsApp for a quote.',
+      'Premier English-speaking nanny service in Galle. In-hotel and in-villa childcare near Galle Fort, Unawatuna Road and beyond. Message us on WhatsApp for a quote.',
     h1: 'Nanny & Babysitter in Galle, Sri Lanka',
     paragraphs: [
       'There’s a reason so many families fall in love with Galle. The old Fort glows gold in the evening light, café tables spill onto cobbled lanes, and the ramparts at sunset feel like they were made for slow walks. It’s also where many of our families come for the most special occasions of all — weddings, anniversaries, and once-in-a-lifetime celebrations.',
@@ -31,6 +34,7 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-unawatuna',
     name: 'Unawatuna',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Unawatuna, Sri Lanka — Beachside Childcare',
     metaDescription:
       'English-speaking nanny service in Unawatuna. We come to your hotel or villa near the bay. Safe, vetted, flexible childcare for travelling families.',
@@ -47,9 +51,10 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-weligama',
     name: 'Weligama',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Weligama, Sri Lanka — Surf-Town Childcare',
     metaDescription:
-      'Trusted nanny service in Weligama. In-hotel childcare near the bay — perfect for surf lessons and date nights. English-speaking, vetted, flexible.',
+      'Premier nanny service in Weligama. In-hotel childcare near the bay — perfect for surf lessons and date nights. English-speaking, vetted, flexible.',
     h1: 'Nanny & Babysitter in Weligama, Sri Lanka',
     paragraphs: [
       'Weligama has one of the friendliest waves in the world — a long, soft, sandy-bottomed bay where half the lineup is learning to stand for the very first time. It’s the town where mum and dad finally get to take that surf lesson together, where stilt fishermen balance against the sunrise, and where family resorts and surf camps sit right on the sand.',
@@ -63,6 +68,7 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-mirissa',
     name: 'Mirissa',
+    region: 'South Coast',
     metaTitle:
       'Nanny & Babysitter in Mirissa, Sri Lanka — Whale-Watching & Date-Night Childcare',
     metaDescription:
@@ -80,9 +86,10 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-hiriketiya',
     name: 'Hiriketiya',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Hiriketiya, Sri Lanka — Boutique Bay Childcare',
     metaDescription:
-      'Trusted nanny service in Hiriketiya. We come to your villa or boutique stay around the bay. English-speaking, vetted, flexible childcare.',
+      'Premier nanny service in Hiriketiya. We come to your villa or boutique stay around the bay. English-speaking, vetted, flexible childcare.',
     h1: 'Nanny & Babysitter in Hiriketiya, Sri Lanka',
     paragraphs: [
       'Hiriketiya is a perfect little horseshoe of a bay — jungle tumbling down to turquoise water, longboards crossing gentle peelers, and some of the loveliest cafés and boutique stays on the whole south coast. “Hiri” has a way of making families cancel their onward plans and stay another week.',
@@ -96,6 +103,7 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-dikwella',
     name: 'Dikwella',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Dikwella, Sri Lanka — Quiet-Coast Childcare',
     metaDescription:
       'English-speaking nanny service in Dikwella. In-villa and in-hotel childcare on the quiet south coast, minutes from Hiriketiya bay.',
@@ -112,18 +120,104 @@ export const TOWNS: Town[] = [
   {
     slug: 'nanny-tangalle',
     name: 'Tangalle',
+    region: 'South Coast',
     metaTitle: 'Nanny & Babysitter in Tangalle, Sri Lanka — Resort & Villa Childcare',
     metaDescription:
-      'Trusted nanny service in Tangalle. In-resort and in-villa childcare on the south coast’s most beautiful beaches. English-speaking & vetted.',
+      'Premier nanny service in Tangalle. In-resort and in-villa childcare on the south coast’s most beautiful beaches. English-speaking & vetted.',
     h1: 'Nanny & Babysitter in Tangalle, Sri Lanka',
     paragraphs: [
       'Tangalle is where the south coast stretches out and exhales — wide, wild beaches that go on forever, lagoons full of birdlife, sea turtles nesting at Rekawa by moonlight, and some of Sri Lanka’s most beautiful resorts and private villas tucked along the sand.',
       'It’s the kind of place that deserves your full attention. Both of yours.',
-      'Our nanny travels to your resort or villa anywhere in Tangalle — the far, peaceful end of our Galle-to-Tangalle service area. Book a candlelit dinner under the palms, a couples’ spa afternoon, or that magical late-night turtle watch at Rekawa, while your little one sleeps soundly with a familiar, gentle presence nearby.',
+      'Our nanny travels to your resort or villa anywhere in Tangalle — the peaceful far end of the south coast. Book a candlelit dinner under the palms, a couples’ spa afternoon, or that magical late-night turtle watch at Rekawa, while your little one sleeps soundly with a familiar, gentle presence nearby.',
       'Familiar is the key word: before any booking begins, you and your child meet our nanny on a short video call, so the first knock on the door is a friendly face, not a stranger. She’s fluent in English, background-verified, follows your routines exactly — and optional live camera access lets you check in from the beach, the spa, or the far end of the sand.',
       'The turtles come out at night. So should you.',
     ],
     ctaText: 'Message us on WhatsApp — we’re in Tangalle',
+  },
+  {
+    slug: 'nanny-hambantota',
+    name: 'Hambantota',
+    region: 'South Coast',
+    metaTitle: 'Nanny & Babysitter in Hambantota, Sri Lanka — Resort Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Hambantota. In-resort and in-villa childcare near the harbour, safari gateways, and southern beaches. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Hambantota, Sri Lanka',
+    paragraphs: [
+      'Hambantota is the gateway to Sri Lanka’s wild south — big skies, uncrowded beaches, and some of the island’s best safari country just up the road at Yala and Bundala. It’s where families base themselves for early-morning game drives and long, unhurried days by the pool.',
+      'And a 5am safari jeep is no place for a sleepy toddler.',
+      'Our nanny comes to your resort or villa anywhere around Hambantota. Head out to spot leopards and elephants at dawn while your little one stays on their own schedule — breakfast, play, and a proper nap — with someone calm, experienced, and endlessly patient. Or take the evening for a quiet dinner while bedtime happens right on time back in the room.',
+      'Every booking begins with a video introduction so you and your child meet your nanny before day one. She speaks fluent English, is fully background-verified, follows your routines exactly, and optional live camera access lets you check in from the park or the pool.',
+      'See the leopards at sunrise. We’ll hold the fort at home.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Hambantota',
+  },
+  {
+    slug: 'nanny-colombo',
+    name: 'Colombo',
+    region: 'Western',
+    metaTitle: 'Nanny & Babysitter in Colombo, Sri Lanka — Hotel & Home Childcare',
+    metaDescription:
+      'Premier English-speaking nanny and babysitter service in Colombo. In-hotel, in-apartment, and in-home childcare for visiting and expat families. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Colombo, Sri Lanka',
+    paragraphs: [
+      'Colombo is where most Sri Lankan journeys begin and end — the arrival flight, the last-night dinner, the business trip with the family in tow. Rooftop bars, waterfront dining, and some of the island’s finest hotels sit minutes from one another across the city.',
+      'It’s also where a reliable nanny makes all the difference — whether you’re easing jet-lagged little ones into the trip, stepping out for a proper dinner, or attending a wedding or meeting child-free.',
+      'Our nanny comes to your hotel, serviced apartment, or home anywhere in Colombo. Fluent English, fully background-verified, and experienced with Canadian, American, and Australian children — she settles in quickly, follows your routines, and keeps bedtime steady while you enjoy the city.',
+      'Every booking starts with a video introduction so you and your child meet your nanny beforehand, and optional live camera access lets you check in from dinner, an event, or across town.',
+      'Enjoy Colombo — we’ll take care of the little ones.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Colombo',
+  },
+  {
+    slug: 'nanny-negombo',
+    name: 'Negombo',
+    region: 'Western',
+    metaTitle: 'Nanny & Babysitter in Negombo, Sri Lanka — Airport & Beach Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Negombo, minutes from Colombo airport. In-hotel and in-villa childcare for arriving and departing families. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Negombo, Sri Lanka',
+    paragraphs: [
+      'Negombo is the first and last stop for so many families — just minutes from Bandaranaike International Airport, with a long sandy beach, the lagoon, and easy resorts perfect for the start or end of a trip.',
+      'Arriving with jet-lagged children, or facing a late-night flight home, is exactly when an extra pair of trusted hands is worth its weight in gold.',
+      'Our nanny comes to your hotel or villa anywhere in Negombo. Whether you need a calm presence while you unpack and reset after a long flight, an evening out before you leave the island, or daytime care while you run pre-departure errands — she’s experienced, fluent in English, and fully background-verified.',
+      'As with every booking, you’ll meet your nanny on a video call first, she follows your routines to the letter, and optional live camera access keeps you connected whenever you step away.',
+      'Land, unwind, and let us help — right from your first night.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Negombo',
+  },
+  {
+    slug: 'nanny-kandy',
+    name: 'Kandy',
+    region: 'Hill Country',
+    metaTitle: 'Nanny & Babysitter in Kandy, Sri Lanka — Hill-Country Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Kandy. In-hotel and in-villa childcare near the lake, the Temple, and the hill country. Message us on WhatsApp for a quote.',
+    h1: 'Nanny & Babysitter in Kandy, Sri Lanka',
+    paragraphs: [
+      'Kandy is Sri Lanka’s cultural heart — the lake, the Temple of the Sacred Tooth, misty hills, and the cool green calm of the tea country all around. Families come for the history, the scenery, and the gentle change of pace from the coast.',
+      'But temple visits, cultural shows, and winding tea-country drives aren’t always toddler-friendly.',
+      'Our nanny comes to your hotel or villa anywhere in Kandy. Explore the Temple and the botanical gardens, enjoy a peaceful lakeside dinner, or take a day trip into the hills while your little one stays happy and rested on their own schedule — cared for by someone experienced, warm, and fluent in English.',
+      'Every booking starts with a video introduction so there are no strangers on day one, your routines are followed exactly, and optional live camera access lets you check in from wherever the day takes you.',
+      'Discover Kandy at your pace. We’ll keep the little ones content.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Kandy',
+  },
+  {
+    slug: 'nanny-ella',
+    name: 'Ella',
+    region: 'Hill Country',
+    metaTitle: 'Nanny & Babysitter in Ella, Sri Lanka — Hill-Country Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Ella. In-hotel and in-villa childcare near Nine Arch Bridge, Little Adam’s Peak, and the tea hills. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Ella, Sri Lanka',
+    paragraphs: [
+      'Ella is the hill country at its most magical — cool mountain air, the famous Nine Arch Bridge, Little Adam’s Peak at sunrise, and that iconic train ride winding through emerald tea fields. It’s a favourite stop for families making their way through the highlands.',
+      'But early hikes and long, scenic train journeys aren’t always easy with a little one in tow.',
+      'Our nanny comes to your hotel or villa anywhere around Ella. Catch the sunrise from Little Adam’s Peak, take the classic train to Demodara, or linger over a slow breakfast with a view — while your child stays happy and rested on their own schedule, cared for by someone warm, experienced, and fluent in English.',
+      'Every booking starts with a video introduction so there are no strangers on day one, your routines are followed exactly, and optional live camera access lets you check in from the trail, the train, or the tea fields.',
+      'Take in the view from the top. We’ll keep the little ones content below.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Ella',
   },
 ]
 

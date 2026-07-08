@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: 'What if I\'m outside your service area?',
-    a: 'We cover Galle to Tangalle at no extra travel charge. For locations outside this area, a travel surcharge applies based on distance. Message us with your location and we\'ll provide a full quote — we often work with clients to find cost-effective transport solutions.',
+    a: 'We serve families across Sri Lanka — Colombo, Negombo, Kandy, and the whole south coast from Galle to Hambantota. Depending on your exact location, a travel charge may apply. Just message us with where you\'re staying and we\'ll send a full quote — we always work with you to keep it simple and fair.',
   },
 ]
 
