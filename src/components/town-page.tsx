@@ -6,8 +6,7 @@ import { HowItWorks } from './how-it-works'
 import { TrackedWhatsAppCTA } from './tracked-whatsapp-cta'
 import { WhatsAppButton } from './whatsapp-button'
 import { TOWNS, townWhatsAppUrl, type Town } from '@/lib/towns'
-
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
+import { REVIEWS, GOOGLE_MAPS_URL } from '@/lib/reviews'
 
 function Stars() {
   return (
@@ -84,19 +83,26 @@ export function TownPage({ town }: { town: Town }) {
           </div>
         </section>
 
-        {/* Google review — placed high (right after intro) to build trust early */}
+        {/* Google reviews — placed high (right after intro) to build trust early */}
         <section className="py-14 md:py-16 bg-ocean-950">
-          <div className="max-w-2xl mx-auto px-4">
-            <div className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center">
-              <div className="flex justify-center mb-4">
-                <Stars />
-              </div>
-              <blockquote className="text-ocean-100 text-lg leading-relaxed mb-4">
-                &ldquo;Mahesha was incredible — experienced, kind, and fun with our little
-                boy. I would highly recommend Ceylon Nannies to anyone needing a nanny while
-                on holiday.&rdquo;
-              </blockquote>
-              <div className="text-sm text-ocean-400 mb-6">— Steph, visiting from Melbourne 🇦🇺</div>
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="grid gap-6 md:grid-cols-2 items-start mb-8">
+              {REVIEWS.map((review) => (
+                <div
+                  key={review.author}
+                  className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center md:text-left"
+                >
+                  <div className="flex justify-center md:justify-start mb-4">
+                    <Stars />
+                  </div>
+                  <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed mb-4">
+                    &ldquo;{review.text}&rdquo;
+                  </blockquote>
+                  <div className="text-sm text-ocean-400">— {review.author}, {review.location}</div>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center">
               <a
                 href={GOOGLE_MAPS_URL}
                 target="_blank"
