@@ -18,8 +18,8 @@ export function About() {
 
             <p className="text-ocean-700 text-lg mb-6 leading-relaxed">
               Because our team is small and personally vetted, you get the one thing agencies
-              can&apos;t promise: a nanny we truly know and stand behind — introduced to you on
-              a video call before day one.
+              can&apos;t promise: a nanny we truly know and stand behind — whose details we share
+              with you before arrival, with a quick video hello available any time you&apos;d like one.
             </p>
 
             <div className="space-y-4">
