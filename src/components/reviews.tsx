@@ -18,7 +18,7 @@ const reviews: Review[] = [
   },
   {
     author: 'Felicity',
-    location: 'holidaying in Sri Lanka',
+    location: 'on a family holiday from Australia 🇦🇺',
     rating: 5,
     text: 'We had such a lovely experience with Ceylon Nannies during our holiday in Sri Lanka. We used them for two afternoons, and our three children absolutely loved spending time with the nannies. They were kind, caring, and wonderful with the kids, and it gave us complete peace of mind knowing they were so well looked after while we had a little time together. Thank you for taking such great care of our family. We’d happily recommend Ceylon Nannies to anyone travelling with children.',
   },
