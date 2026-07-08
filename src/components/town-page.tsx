@@ -155,7 +155,7 @@ export function TownPage({ town }: { town: Town }) {
         <section className="py-12 bg-ocean-50 border-t border-ocean-100">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-sm font-medium text-ocean-500 mb-4">
-              We also serve these areas across Sri Lanka
+              We also serve these areas
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2.5">
               {otherTowns.map((t) => (

@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: 'What if I\'m outside your service area?',
-    a: 'We serve families across Sri Lanka — Colombo, Negombo, Kandy, and the whole south coast from Galle to Hambantota. Depending on your exact location, a travel charge may apply. Just message us with where you\'re staying and we\'ll send a full quote — we always work with you to keep it simple and fair.',
+    a: 'We currently serve three regions: the west coast (Colombo & Negombo), the hill country (Kandy & Ella), and the south coast (Galle through to Hambantota). Depending on your exact location within these areas, a small travel charge may apply. Staying somewhere else? Message us — if we can help or are expanding your way, we\'ll let you know honestly.',
   },
 ]
 

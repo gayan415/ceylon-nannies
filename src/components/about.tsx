@@ -28,7 +28,7 @@ export function About() {
                 { label: 'Languages', value: 'Fluent English + Sinhala' },
                 { label: 'Experience', value: 'Raising Canadian, American & Australian children' },
                 { label: 'Capacity', value: 'Maximum 2 children per nanny (more with a second nanny)' },
-                { label: 'Availability', value: 'Any time, any day — year-round, island-wide' },
+                { label: 'Availability', value: 'Any time, any day — year-round' },
                 { label: 'Vetting', value: 'Every nanny police-verified and background-checked' },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
@@ -57,8 +57,8 @@ export function About() {
                 <div className="text-xs text-ocean-500 mt-1">Families we&apos;ve cared for</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
-                <div className="text-2xl font-bold text-ocean-900">Island-wide</div>
-                <div className="text-xs text-ocean-500 mt-1">Colombo to the south coast</div>
+                <div className="text-2xl font-bold text-ocean-900">3 regions</div>
+                <div className="text-xs text-ocean-500 mt-1">West coast, hill country &amp; south coast</div>
               </div>
             </div>
           </div>
