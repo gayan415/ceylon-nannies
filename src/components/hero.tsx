@@ -20,7 +20,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-ocean-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Premier in-hotel nanny and babysitter service across Sri Lanka. Live camera access available on request (extra charge).
+          Premier in-hotel nanny and babysitter service across Sri Lanka. Live camera access available on request.
           Enjoy your evening — they&apos;re in safe hands.
         </p>
 

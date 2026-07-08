@@ -63,7 +63,7 @@ export function TownPage({ town }: { town: Town }) {
           <div className="max-w-3xl mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-ocean-100 text-ocean-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              {town.name} · Sri Lanka&apos;s South Coast
+              {town.name} · Sri Lanka
             </div>
             <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 leading-tight mb-6">
               {town.h1}
@@ -84,21 +84,8 @@ export function TownPage({ town }: { town: Town }) {
           </div>
         </section>
 
-        {/* How it works in {Town} */}
-        <div className="bg-white">
-          <div className="max-w-6xl mx-auto px-4 pt-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-ocean-950 text-center">
-              How it works in {town.name}
-            </h2>
-          </div>
-          <HowItWorks />
-        </div>
-
-        {/* Pricing (shared component) */}
-        <Pricing />
-
-        {/* Short review card */}
-        <section className="py-16 md:py-20 bg-ocean-950">
+        {/* Google review — placed high (right after intro) to build trust early */}
+        <section className="py-14 md:py-16 bg-ocean-950">
           <div className="max-w-2xl mx-auto px-4">
             <div className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center">
               <div className="flex justify-center mb-4">
@@ -127,6 +114,19 @@ export function TownPage({ town }: { town: Town }) {
             </div>
           </div>
         </section>
+
+        {/* How it works in {Town} */}
+        <div className="bg-white">
+          <div className="max-w-6xl mx-auto px-4 pt-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-ocean-950 text-center">
+              How it works in {town.name}
+            </h2>
+          </div>
+          <HowItWorks />
+        </div>
+
+        {/* Pricing (shared component) */}
+        <Pricing />
 
         {/* FAQ link + final CTA */}
         <section className="py-16 md:py-20 bg-white">
