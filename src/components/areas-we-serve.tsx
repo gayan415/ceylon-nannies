@@ -25,8 +25,8 @@ export function AreasWeServe() {
             We Come to You — Across Sri Lanka
           </h2>
           <p className="text-ocean-600 max-w-xl mx-auto">
-            From the moment you land in Colombo to your last sunset in the south, our nanny
-            travels to your hotel, villa, or home — anywhere on the island.
+            From the moment you land in Colombo to your last sunset in the south, our nannies
+            travel to your hotel, villa, or home across the west coast, hill country, and south coast.
           </p>
         </div>
 

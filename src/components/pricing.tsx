@@ -16,7 +16,7 @@ export function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-ocean-600 max-w-xl mx-auto">
-            All sessions include travel to your accommodation and a pre-session introduction call. Live camera access available on request (extra charge).
+            All sessions include travel to your accommodation, with your nanny&apos;s details shared before arrival. Live camera access available on request.
           </p>
         </div>
 

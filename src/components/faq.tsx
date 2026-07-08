@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     q: 'What ages do you accept?',
-    a: 'We care for children aged 0-6 years. Our nanny is experienced with all ages in this range, from infants to active toddlers.',
+    a: 'We care for children aged 0-6 years. Our nannies are experienced with all ages in this range, from infants to active toddlers.',
   },
   {
     q: 'How many children per nanny?',
-    a: 'Up to 2 children in our nanny\'s sole care — this keeps attention personal and focused. A third child can be looked after when a parent is present as a helper, or we can arrange a second nanny for larger groups. Just tell us how many little ones you have and we\'ll find the right fit.',
+    a: 'Up to 2 children in one nanny\'s sole care — this keeps attention personal and focused. A third child can be looked after when a parent is present as a helper, or we can arrange a second nanny for larger groups. Just tell us how many little ones you have and we\'ll find the right fit.',
   },
   {
     q: 'What if my child has allergies?',
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'What language does the nanny speak?',
-    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Your nanny currently raises Canadian, American, and Australian children and communicates fluently in English daily.',
+    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Our nannies care for Canadian, American, and Australian children and communicate fluently in English daily.',
   },
   {
     q: 'I\'m a first-time client — how do I get started?',
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: 'What if I\'m outside your service area?',
-    a: 'We serve families across Sri Lanka — Colombo, Negombo, Kandy, and the whole south coast from Galle to Hambantota. Depending on your exact location, a travel charge may apply. Just message us with where you\'re staying and we\'ll send a full quote — we always work with you to keep it simple and fair.',
+    a: 'We currently serve three regions: the west coast (Colombo & Negombo), the hill country (Kandy & Ella), and the south coast (Galle through to Hambantota). Depending on your exact location within these areas, a small travel charge may apply. Staying somewhere else? Message us — if we can help or are expanding your way, we\'ll let you know honestly.',
   },
 ]
 
