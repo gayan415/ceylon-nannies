@@ -2,7 +2,7 @@ import { WhatsAppIcon } from './icons'
 
 export function Pricing() {
   const plans = [
-    { duration: '2 hours', price: 30, label: 'Quick', perHour: '15.00', popular: false, useCase: 'Perfect for a quick dinner out' },
+    { duration: '2 hours', price: 35, label: 'Quick', perHour: '17.50', popular: false, useCase: 'Perfect for a quick dinner out' },
     { duration: '4 hours', price: 55, label: 'Standard', perHour: '13.75', popular: true, useCase: 'Dinner, drinks & a beach walk' },
     { duration: '6 hours', price: 75, label: 'Extended', perHour: '12.50', popular: false, useCase: 'Sunset session to late-night' },
     { duration: '8 hours', price: 90, label: 'Full Day', perHour: '11.25', popular: false, useCase: 'Day trip, surf, or full work day' },

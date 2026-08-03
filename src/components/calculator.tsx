@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { WhatsAppIcon } from './icons'
 
 const RATES = [
-  { label: '2 hours', hours: 2, price: 30 },
+  { label: '2 hours', hours: 2, price: 35 },
   { label: '4 hours', hours: 4, price: 55 },
   { label: '6 hours', hours: 6, price: 75 },
   { label: '8 hours', hours: 8, price: 90 },
