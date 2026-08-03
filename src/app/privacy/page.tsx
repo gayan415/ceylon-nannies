@@ -114,6 +114,13 @@ export default function PrivacyPage() {
               >
                 Message us on WhatsApp
               </a>
+              <p className="mt-4 text-sm text-ocean-600">
+                Prefer email? Write to us at{' '}
+                <a href="mailto:ceylonnannies@gmail.com" className="text-ocean-700 underline hover:text-ocean-900">
+                  ceylonnannies@gmail.com
+                </a>
+                .
+              </p>
             </section>
           </div>
         </div>
