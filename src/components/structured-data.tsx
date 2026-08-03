@@ -25,13 +25,13 @@ export function StructuredData() {
       { '@type': 'City', name: 'Hambantota, Sri Lanka' },
     ],
     serviceType: 'Babysitter',
-    priceRange: '$30-$90 USD',
+    priceRange: '$35-$90 USD',
     availableLanguage: 'English',
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Nanny Services',
       itemListElement: [
-        { '@type': 'Offer', name: 'Quick Session (2 hours)', price: '30', priceCurrency: 'USD' },
+        { '@type': 'Offer', name: 'Quick Session (2 hours)', price: '35', priceCurrency: 'USD' },
         { '@type': 'Offer', name: 'Standard Session (4 hours)', price: '55', priceCurrency: 'USD' },
         { '@type': 'Offer', name: 'Extended Session (6 hours)', price: '75', priceCurrency: 'USD' },
         { '@type': 'Offer', name: 'Full Day Session (8 hours)', price: '90', priceCurrency: 'USD' },
