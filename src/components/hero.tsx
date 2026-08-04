@@ -3,6 +3,15 @@ import { WhatsAppIcon } from './icons'
 export function Hero() {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-ocean-50 to-white overflow-hidden">
+      {/* Faint beach brand image as a background watermark — decorative/aspirational
+          only (AI-generated), never presented as a real nanny. Kept very low
+          opacity with a white gradient wash so hero text stays fully readable. */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.08]"
+        style={{ backgroundImage: 'url(/hero-banner.jpg)' }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/50 to-white" aria-hidden="true" />
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-ocean-300 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-sand-200 rounded-full blur-3xl" />
@@ -71,20 +80,6 @@ Colombo · Kandy · Ella · South Coast
             Max 2 children per nanny
           </div>
         </div>
-      </div>
-
-      {/* Decorative brand banner — sets the beach-holiday mood. Aspirational
-          imagery (not a specific nanny/client). Logo/tagline are baked into
-          the image, so no caption. */}
-      <div className="relative mt-12 md:mt-16 max-w-5xl mx-auto px-4">
-        <img
-          src="/hero-banner.jpg"
-          alt="A nanny playing on a Sri Lankan beach with a young child under the palms"
-          className="w-full h-auto rounded-2xl shadow-xl"
-          width={1604}
-          height={1362}
-          loading="lazy"
-        />
       </div>
     </section>
   )
