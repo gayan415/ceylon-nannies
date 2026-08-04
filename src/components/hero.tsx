@@ -7,11 +7,11 @@ export function Hero() {
           only (AI-generated), never presented as a real nanny. Kept very low
           opacity with a white gradient wash so hero text stays fully readable. */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.08]"
-        style={{ backgroundImage: 'url(/hero-banner.jpg)' }}
+        className="absolute inset-0 bg-cover opacity-20"
+        style={{ backgroundImage: 'url(/hero-banner.jpg)', backgroundPosition: 'right center' }}
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/50 to-white" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/45 to-white" aria-hidden="true" />
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-ocean-300 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-sand-200 rounded-full blur-3xl" />
