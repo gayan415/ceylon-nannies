@@ -2,11 +2,41 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
 import { Footer } from '@/components/footer'
+import { CopyEmail } from '@/components/copy-email'
+import { HIRING_OPEN, HIRING_SEASON } from '@/lib/hiring'
 
 export const metadata: Metadata = {
-  title: 'Join Our Team — Ceylon Nannies',
-  description: 'Ceylon Nannies is growing. Caring, experienced nannies on Sri Lanka\'s south coast — we\'d love to hear from you.',
+  title: HIRING_OPEN
+    ? 'We\'re Hiring Childcare Professionals — Ceylon Nannies'
+    : 'Join Our Team — Ceylon Nannies',
+  description: HIRING_OPEN
+    ? 'Ceylon Nannies is hiring caring, English-speaking childcare professionals across Sri Lanka\'s west coast, hill country, and south coast. A warm, family-run premier service for travelling families.'
+    : 'Ceylon Nannies is a warm, family-run premier childcare service for travelling families in Sri Lanka. Join our waitlist of caring childcare professionals — we\'ll reach out when a spot opens near you.',
 }
+
+const HIRING_REGIONS = [
+  { region: 'West Coast', places: 'Colombo & Negombo' },
+  { region: 'Hill Country', places: 'Kandy & Ella' },
+  { region: 'South Coast', places: 'Galle, Hikkaduwa, Hiriketiya, Mirissa, Tangalle & Hambantota' },
+]
+
+const WHAT_YOULL_DO = [
+  'Warm, attentive in-hotel & in-villa childcare',
+  'Care for children from Canada, the USA, Australia & the UK',
+  'Travel to hotels, villas & resorts in your area',
+  'Deliver safe, professional, thoughtful care',
+]
+
+const WHAT_WERE_LOOKING_FOR = [
+  { bold: 'Minimum age 21', rest: '' },
+  { bold: '2+ years childcare experience', rest: ' — raising your own children absolutely counts!' },
+  { bold: 'Fluent English', rest: ' — confident, natural communication is essential' },
+  { bold: 'Genuine warmth & patience', rest: ' with young children — comfortable caring for babies through age 6' },
+  { bold: 'Able & willing to travel', rest: ' to different hotels and villas in your area' },
+  { bold: 'Excellent personal hygiene', rest: ' — clean, well-dressed & organized' },
+  { bold: 'Professional & reliable', rest: ' — beautifully presented, punctual, and true to your commitments' },
+  { bold: 'First aid or CPR knowledge a strong plus', rest: ' — we\'ll support training for the right person' },
+]
 
 export default function CareersPage() {
   return (
@@ -23,29 +53,192 @@ export default function CareersPage() {
         </div>
       </header>
 
-      <main className="pt-24 pb-16 md:pt-32 md:pb-24 bg-ocean-50 min-h-[70vh] flex items-center">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 bg-sand-100 text-sand-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-sand-500 rounded-full animate-pulse" />
-            Coming Soon
+      <main className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          {/* Intro */}
+          <div className="text-center mb-12">
+            {HIRING_OPEN ? (
+              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+                </span>
+                Now hiring · applications open for {HIRING_SEASON}
+              </div>
+            ) : (
+              <div className="inline-flex items-center gap-2 bg-sand-100 text-sand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                <span className="w-2 h-2 bg-sand-500 rounded-full" />
+                Applications paused — join our waitlist
+              </div>
+            )}
+            <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 mb-6">
+              Childcare Professionals
+            </h1>
+            <p className="text-lg text-ocean-700 leading-relaxed">
+              <strong className="text-ocean-900">For us, caring for a child is never &ldquo;just
+              a job.&rdquo;</strong> Ceylon Nannies is a warm, family-run team caring for
+              travelling families visiting Sri Lanka — and we&apos;re looking for people who
+              genuinely light up around children: who play, comfort, and care the way they
+              would for their own. If you find real joy in a little one&apos;s laugh and take
+              pride in thoughtful, professional care, we&apos;d love to hear from you.
+            </p>
           </div>
 
-          <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 mb-6">
-            Join Our Team
-          </h1>
+          <div className="space-y-10 text-ocean-700 leading-relaxed">
+            {/* Why join us */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">Why join us</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                <li><strong className="text-ocean-900">Flexible, booking-based work</strong> that fits around your life</li>
+                <li>Care for families in beautiful hotels and villas near you</li>
+                <li>A warm, family-run team that treats you the way we treat our families</li>
+                <li>Grow with us as we expand across Sri Lanka</li>
+              </ul>
+              <p className="mt-4">
+                <strong className="text-ocean-900">Pay:</strong> attractive, booking-based
+                earnings — you&apos;re paid a generous share of every booking, and tips are
+                always yours to keep. We&apos;ll discuss the details when we talk.
+              </p>
+            </section>
 
-          <p className="text-lg text-ocean-700 leading-relaxed mb-4">
-            Ceylon Nannies is growing — and we&apos;re looking for warm, experienced,
-            English-speaking nannies who love caring for children along Sri Lanka&apos;s
-            south coast.
-          </p>
+            {/* Where we're hiring */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">Where we&apos;re hiring</h2>
+              <ul className="space-y-2">
+                {HIRING_REGIONS.map((r) => (
+                  <li key={r.region} className="flex gap-2">
+                    <span className="text-ocean-400" aria-hidden="true">•</span>
+                    <span>
+                      <strong className="text-ocean-900">{r.region}</strong> — {r.places}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
 
-          <p className="text-ocean-600 leading-relaxed">
-            We&apos;re putting together the details of what we&apos;re looking for.
-            Full openings will be posted here soon — please check back. If you&apos;d
-            love to be part of a caring, professional, family-run team, we&apos;d be
-            delighted to welcome you when applications open.
-          </p>
+            {/* What you'll do */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">What you&apos;ll do</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                {WHAT_YOULL_DO.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </section>
+
+            {/* What we're looking for */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">What we&apos;re looking for</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                {WHAT_WERE_LOOKING_FOR.map((item) => (
+                  <li key={item.bold}>
+                    <strong className="text-ocean-900">{item.bold}</strong>
+                    {item.rest}
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* Especially welcome */}
+            <section className="bg-ocean-950 rounded-2xl p-6 md:p-8 text-center">
+              <p className="text-sm font-semibold uppercase tracking-wider text-sand-300 mb-2">
+                We especially welcome those with
+              </p>
+              <p className="text-lg font-semibold text-white">
+                Overseas childcare experience · high-end hotel hospitality · experience
+                caring for children with additional needs · a second language such as
+                French or Spanish is a lovely bonus
+              </p>
+            </section>
+
+            {/* How we choose our nannies — vetting showcase (dual audience:
+                reassures applicants of a high bar AND shows parents our rigor) */}
+            <section className="bg-sand-50 border border-sand-200 rounded-2xl p-6 md:p-8">
+              <h2 className="text-xl font-bold text-ocean-950 mb-2">How we choose our nannies</h2>
+              <p className="mb-5">
+                We hire the way you&apos;d choose someone for your own child — because that&apos;s
+                exactly the standard we started with. Only a small number of applicants meet it.
+                Every nanny who joins us passes:
+              </p>
+              <ol className="space-y-3">
+                {[
+                  { t: 'Identity verified', d: 'We confirm government-issued ID (NIC) — every nanny is a real, identifiable person.' },
+                  { t: 'Clear police record', d: 'A police clearance check with no concerning history.' },
+                  { t: 'References we personally call', d: 'We speak to past families and employers and ask the question that matters: would you trust this person with your own child again?' },
+                  { t: 'A face-to-face interview', d: 'We meet every candidate in person or by video — never hired from a résumé alone.' },
+                  { t: 'Observed with a child', d: 'We watch how they actually are with children — warmth, patience, attentiveness — before they ever care for yours.' },
+                  { t: 'Fluent English', d: 'A safety standard, not a preference — so allergies, routines, and emergencies are always understood clearly.' },
+                ].map((step, i) => (
+                  <li key={step.t} className="flex gap-3">
+                    <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-ocean-600 text-white text-xs font-bold mt-0.5">
+                      {i + 1}
+                    </span>
+                    <span>
+                      <strong className="text-ocean-900">{step.t}</strong> — {step.d}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            {/* How to apply — the checklist lives here, right where they act */}
+            <section className="bg-ocean-50 rounded-2xl p-6 md:p-8 border border-ocean-100">
+              <h2 className="text-2xl font-bold text-ocean-950 mb-3 text-center">
+                {HIRING_OPEN ? 'How to apply' : 'Join our waitlist'}
+              </h2>
+              <p className="text-center mb-6 max-w-xl mx-auto">
+                {HIRING_OPEN ? (
+                  <>
+                    Email us your resume and a little about yourself. To help us get to know you,
+                    please tell us:
+                  </>
+                ) : (
+                  <>
+                    We&apos;re not actively hiring right now, but we&apos;re always glad to meet
+                    wonderful caregivers. Email us your details — including the below — and
+                    we&apos;ll reach out the moment a spot opens near you:
+                  </>
+                )}
+              </p>
+
+              <ul className="max-w-xl mx-auto space-y-1.5 list-disc pl-5 mb-6">
+                <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
+                <li>Which area you&apos;re based in</li>
+                <li>A little about your experience with children (raising your own counts!)</li>
+                <li>Your availability — which days/times, and roughly how many hours a week</li>
+              </ul>
+
+              {/* Write-it-yourself note — doubles as a passion filter */}
+              <div className="max-w-xl mx-auto mb-8 rounded-xl bg-white border border-sand-200 p-4 text-sm">
+                <p className="text-ocean-700">
+                  <strong className="text-ocean-900">A gentle but important note:</strong> please
+                  write to us in your <em>own</em> words — from the heart, however imperfect.
+                  We&apos;re a caring, human team and we read every message ourselves. We can tell
+                  when a message is written by AI, and using AI tools or &ldquo;humanizers&rdquo;
+                  to write your application means an immediate no. We&apos;d so much rather hear
+                  the real you.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <CopyEmail />
+              </div>
+            </section>
+
+            {/* What happens next — after they apply */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">What happens next</h2>
+              <p>
+                We read every application and reach out for a friendly chat. For the right fit,
+                we complete background and reference checks before warmly welcoming you to the
+                team.
+              </p>
+            </section>
+
+            <p className="text-center text-ocean-500 italic pt-2">
+              Ceylon Nannies — caring for families the way we&apos;d care for our own.
+            </p>
+          </div>
         </div>
       </main>
 
