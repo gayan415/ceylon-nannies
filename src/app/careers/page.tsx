@@ -178,52 +178,62 @@ export default function CareersPage() {
               </ol>
             </section>
 
-            {/* In your email + What happens next — paired on desktop */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <section>
-                <h2 className="text-xl font-bold text-ocean-950 mb-3">In your email, please tell us</h2>
-                <ul className="space-y-1.5 list-disc pl-5">
-                  <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
-                  <li>Which area you&apos;re based in</li>
-                  <li>Your childcare experience (raising your own children counts!)</li>
-                  <li>How comfortable you are speaking English</li>
-                  <li>Your general availability</li>
-                  <li>Whether you can travel to hotels and villas in your area</li>
-                  <li>Any references you can share</li>
-                </ul>
-              </section>
+            {/* What happens next */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">What happens next</h2>
+              <p>
+                We read every application and reach out for a friendly chat. For the right fit,
+                we complete background and reference checks before warmly welcoming you to the
+                team.
+              </p>
+            </section>
 
-              <section>
-                <h2 className="text-xl font-bold text-ocean-950 mb-3">What happens next</h2>
-                <p>
-                  We read every application and reach out for a friendly chat. For the right fit,
-                  we complete background and reference checks before warmly welcoming you to the
-                  team.
-                </p>
-              </section>
-            </div>
-
-            {/* How to apply */}
-            <section className="text-center pt-2">
-              <h2 className="text-2xl font-bold text-ocean-950 mb-3">
+            {/* How to apply — the checklist lives here, right where they act */}
+            <section className="bg-ocean-50 rounded-2xl p-6 md:p-8 border border-ocean-100">
+              <h2 className="text-2xl font-bold text-ocean-950 mb-3 text-center">
                 {HIRING_OPEN ? 'How to apply' : 'Join our waitlist'}
               </h2>
-              <p className="mb-6">
+              <p className="text-center mb-6 max-w-xl mx-auto">
                 {HIRING_OPEN ? (
                   <>
-                    Send your resume with a little about yourself, your experience, and your
-                    location to the email below. We&apos;d love to meet you.
+                    Email us your resume and a little about yourself. To help us get to know you,
+                    please tell us:
                   </>
                 ) : (
                   <>
                     We&apos;re not actively hiring right now, but we&apos;re always glad to meet
-                    wonderful caregivers. Send your details to the email below and we&apos;ll
-                    reach out the moment a spot opens near you.
+                    wonderful caregivers. Email us your details — including the below — and
+                    we&apos;ll reach out the moment a spot opens near you:
                   </>
                 )}
               </p>
-              <CopyEmail />
-              <p className="mt-8 text-ocean-500 italic">
+
+              <ul className="max-w-xl mx-auto space-y-1.5 list-disc pl-5 mb-6">
+                <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
+                <li>Which area you&apos;re based in</li>
+                <li>Your childcare experience (raising your own children counts!)</li>
+                <li>How comfortable you are speaking English</li>
+                <li>Your general availability</li>
+                <li>Whether you can travel to hotels and villas in your area</li>
+                <li>Any references you can share</li>
+              </ul>
+
+              {/* Write-it-yourself note — doubles as a passion filter */}
+              <div className="max-w-xl mx-auto mb-8 rounded-xl bg-white border border-sand-200 p-4 text-sm">
+                <p className="text-ocean-700">
+                  <strong className="text-ocean-900">A gentle but important note:</strong> please
+                  write to us in your <em>own</em> words — from the heart, however imperfect.
+                  We&apos;re a caring, human team and we read every message ourselves. We can tell
+                  when a message is written by AI, and using AI tools or &ldquo;humanizers&rdquo;
+                  to write your application means an immediate no. We&apos;d so much rather hear
+                  the real you.
+                </p>
+              </div>
+
+              <div className="flex justify-center">
+                <CopyEmail />
+              </div>
+              <p className="mt-8 text-center text-ocean-500 italic">
                 Ceylon Nannies — caring for families the way we&apos;d care for our own.
               </p>
             </section>
