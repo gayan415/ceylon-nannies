@@ -53,10 +53,10 @@ export default function CareersPage() {
         </div>
       </header>
 
-      <main className="pt-24 pb-16 md:pt-28 md:pb-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      <main className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
           {/* Intro */}
-          <div className="text-center mb-10 max-w-3xl mx-auto">
+          <div className="text-center mb-12">
             {HIRING_OPEN ? (
               <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
                 <span className="relative flex h-2 w-2">
@@ -71,7 +71,7 @@ export default function CareersPage() {
                 Applications paused — join our waitlist
               </div>
             )}
-            <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 mb-6">
               Childcare Professionals
             </h1>
             <p className="text-lg text-ocean-700 leading-relaxed">
@@ -84,49 +84,52 @@ export default function CareersPage() {
             </p>
           </div>
 
-          <div className="space-y-8 text-ocean-700 leading-relaxed">
-            {/* Why join us + Where we're hiring — paired on desktop */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <section>
-                <h2 className="text-xl font-bold text-ocean-950 mb-3">Why join us</h2>
-                <ul className="space-y-1.5 list-disc pl-5">
-                  <li><strong className="text-ocean-900">Flexible, booking-based work</strong> that fits around your life</li>
-                  <li>Care for families in beautiful hotels and villas near you</li>
-                  <li>A warm, family-run team that treats you the way we treat our families</li>
-                  <li>Grow with us as we expand across Sri Lanka</li>
-                </ul>
-                <p className="mt-3">
-                  <strong className="text-ocean-900">Pay:</strong> attractive, booking-based
-                  earnings — you&apos;re paid a generous share of every booking, and tips are
-                  always yours to keep. We&apos;ll discuss the details when we talk.
-                </p>
-              </section>
+          <div className="space-y-10 text-ocean-700 leading-relaxed">
+            {/* Why join us */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">Why join us</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                <li><strong className="text-ocean-900">Flexible, booking-based work</strong> that fits around your life</li>
+                <li>Care for families in beautiful hotels and villas near you</li>
+                <li>A warm, family-run team that treats you the way we treat our families</li>
+                <li>Grow with us as we expand across Sri Lanka</li>
+              </ul>
+              <p className="mt-4">
+                <strong className="text-ocean-900">Pay:</strong> attractive, booking-based
+                earnings — you&apos;re paid a generous share of every booking, and tips are
+                always yours to keep. We&apos;ll discuss the details when we talk.
+              </p>
+            </section>
 
-              <section>
-                <h2 className="text-xl font-bold text-ocean-950 mb-3">Where we&apos;re hiring</h2>
-                <ul className="space-y-1.5">
-                  {HIRING_REGIONS.map((r) => (
-                    <li key={r.region} className="flex gap-2">
-                      <span className="text-ocean-400" aria-hidden="true">•</span>
-                      <span>
-                        <strong className="text-ocean-900">{r.region}</strong> — {r.places}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <h2 className="text-xl font-bold text-ocean-950 mb-3 mt-6">What you&apos;ll do</h2>
-                <ul className="space-y-1.5 list-disc pl-5">
-                  {WHAT_YOULL_DO.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-            </div>
+            {/* Where we're hiring */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">Where we&apos;re hiring</h2>
+              <ul className="space-y-2">
+                {HIRING_REGIONS.map((r) => (
+                  <li key={r.region} className="flex gap-2">
+                    <span className="text-ocean-400" aria-hidden="true">•</span>
+                    <span>
+                      <strong className="text-ocean-900">{r.region}</strong> — {r.places}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* What you'll do */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">What you&apos;ll do</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                {WHAT_YOULL_DO.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </section>
 
             {/* What we're looking for */}
             <section>
-              <h2 className="text-xl font-bold text-ocean-950 mb-3">What we&apos;re looking for</h2>
-              <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-1.5 list-disc pl-5">
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">What we&apos;re looking for</h2>
+              <ul className="space-y-2 list-disc pl-5">
                 {WHAT_WERE_LOOKING_FOR.map((item) => (
                   <li key={item.bold}>
                     <strong className="text-ocean-900">{item.bold}</strong>
@@ -157,7 +160,7 @@ export default function CareersPage() {
                 exactly the standard we started with. Only a small number of applicants meet it.
                 Every nanny who joins us passes:
               </p>
-              <ol className="space-y-2.5">
+              <ol className="space-y-3">
                 {[
                   { t: 'Identity verified', d: 'We confirm government-issued ID (NIC) — every nanny is a real, identifiable person.' },
                   { t: 'Clear police record', d: 'A police clearance check with no concerning history.' },
