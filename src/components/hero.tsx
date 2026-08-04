@@ -3,6 +3,15 @@ import { WhatsAppIcon } from './icons'
 export function Hero() {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-ocean-50 to-white overflow-hidden">
+      {/* Faint beach brand image as a background watermark — decorative/aspirational
+          only (AI-generated), never presented as a real nanny. Kept very low
+          opacity with a white gradient wash so hero text stays fully readable. */}
+      <div
+        className="absolute inset-0 bg-cover opacity-[0.30]"
+        style={{ backgroundImage: 'url(/hero-banner.jpg)', backgroundPosition: 'right center' }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/45 via-white/40 to-white" aria-hidden="true" />
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-72 h-72 bg-ocean-300 rounded-full blur-3xl" />
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-sand-200 rounded-full blur-3xl" />
