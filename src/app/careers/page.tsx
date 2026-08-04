@@ -145,8 +145,9 @@ export default function CareersPage() {
                 We especially welcome those with
               </p>
               <p className="text-lg font-semibold text-white">
-                Overseas childcare experience · high-end hotel hospitality · a second
-                language such as French or Spanish is a lovely bonus
+                Overseas childcare experience · high-end hotel hospitality · experience
+                caring for children with additional needs · a second language such as
+                French or Spanish is a lovely bonus
               </p>
             </section>
 
