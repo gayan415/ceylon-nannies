@@ -181,16 +181,6 @@ export default function CareersPage() {
               </ol>
             </section>
 
-            {/* What happens next */}
-            <section>
-              <h2 className="text-xl font-bold text-ocean-950 mb-3">What happens next</h2>
-              <p>
-                We read every application and reach out for a friendly chat. For the right fit,
-                we complete background and reference checks before warmly welcoming you to the
-                team.
-              </p>
-            </section>
-
             {/* How to apply — the checklist lives here, right where they act */}
             <section className="bg-ocean-50 rounded-2xl p-6 md:p-8 border border-ocean-100">
               <h2 className="text-2xl font-bold text-ocean-950 mb-3 text-center">
@@ -233,10 +223,21 @@ export default function CareersPage() {
               <div className="flex justify-center">
                 <CopyEmail />
               </div>
-              <p className="mt-8 text-center text-ocean-500 italic">
-                Ceylon Nannies — caring for families the way we&apos;d care for our own.
+            </section>
+
+            {/* What happens next — after they apply */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">What happens next</h2>
+              <p>
+                We read every application and reach out for a friendly chat. For the right fit,
+                we complete background and reference checks before warmly welcoming you to the
+                team.
               </p>
             </section>
+
+            <p className="text-center text-ocean-500 italic pt-2">
+              Ceylon Nannies — caring for families the way we&apos;d care for our own.
+            </p>
           </div>
         </div>
       </main>
