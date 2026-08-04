@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { WhatsAppIcon } from './icons'
 import { Logo } from './logo'
+import { HIRING_OPEN, HIRING_SEASON } from '@/lib/hiring'
 
 export function Header() {
   return (
@@ -18,7 +19,18 @@ export function Header() {
           <a href="#our-story" className="hover:text-ocean-600 transition-colors">Our Story</a>
           <a href="#reviews" className="hover:text-ocean-600 transition-colors">Reviews</a>
           <a href="#faq" className="hover:text-ocean-600 transition-colors">FAQ</a>
-          <Link href="/careers" className="hover:text-ocean-600 transition-colors">Join Our Team</Link>
+          <Link href="/careers" className="group inline-flex items-center gap-1.5 hover:text-ocean-600 transition-colors">
+            Join Our Team
+            {HIRING_OPEN && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-green-50 border border-green-200 px-2 py-0.5 text-[11px] font-semibold text-green-700 group-hover:bg-green-100 transition-colors">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-500" />
+                </span>
+                Hiring {HIRING_SEASON}
+              </span>
+            )}
+          </Link>
         </nav>
 
         <a

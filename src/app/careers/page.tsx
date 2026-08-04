@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
 import { Footer } from '@/components/footer'
+import { CopyEmail } from '@/components/copy-email'
+import { HIRING_OPEN, HIRING_SEASON } from '@/lib/hiring'
 
 export const metadata: Metadata = {
   title: 'We\'re Hiring Childcare Professionals — Ceylon Nannies',
@@ -26,10 +28,11 @@ const WHAT_WERE_LOOKING_FOR = [
   { bold: 'Minimum age 21', rest: '' },
   { bold: '2+ years childcare experience', rest: ' — raising your own children absolutely counts!' },
   { bold: 'Fluent English', rest: ' — confident, natural communication is essential' },
-  { bold: 'Genuine warmth & patience', rest: ' with young children' },
+  { bold: 'Genuine warmth & patience', rest: ' with young children — comfortable caring for babies through age 6' },
   { bold: 'Able & willing to travel', rest: ' to different hotels and villas in your area' },
   { bold: 'Excellent personal hygiene', rest: ' — clean, well-dressed & organized' },
-  { bold: 'Professional & reliable', rest: ' — beautifully presented and dependable' },
+  { bold: 'Professional & reliable', rest: ' — beautifully presented, punctual, and true to your commitments' },
+  { bold: 'First aid or CPR knowledge a strong plus', rest: ' — we\'ll support training for the right person' },
 ]
 
 export default function CareersPage() {
@@ -51,23 +54,51 @@ export default function CareersPage() {
         <div className="max-w-3xl mx-auto px-4">
           {/* Intro */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-ocean-100 text-ocean-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              We&apos;re Hiring
-            </div>
+            {HIRING_OPEN ? (
+              <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+                </span>
+                Now hiring · applications open for {HIRING_SEASON}
+              </div>
+            ) : (
+              <div className="inline-flex items-center gap-2 bg-sand-100 text-sand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                <span className="w-2 h-2 bg-sand-500 rounded-full" />
+                Applications paused — join our waitlist
+              </div>
+            )}
             <h1 className="text-3xl md:text-5xl font-bold text-ocean-950 mb-6">
               Childcare Professionals
             </h1>
             <p className="text-lg text-ocean-700 leading-relaxed">
-              Ceylon Nannies is a premier boutique childcare service caring for travelling
-              families visiting Sri Lanka. We&apos;re a warm, family-run business growing our
-              team of exceptional childcare professionals. If you love caring for children,
-              speak beautiful English, and take pride in thoughtful, professional care,
-              we&apos;d love to hear from you.
+              <strong className="text-ocean-900">For us, caring for a child is never &ldquo;just
+              a job.&rdquo;</strong> Ceylon Nannies is a warm, family-run team caring for
+              travelling families visiting Sri Lanka — and we&apos;re looking for people who
+              genuinely light up around children: who play, comfort, and care the way they
+              would for their own. If you find real joy in a little one&apos;s laugh, speak
+              beautiful English, and take pride in thoughtful, professional care, we&apos;d
+              love to hear from you.
             </p>
           </div>
 
           <div className="space-y-10 text-ocean-700 leading-relaxed">
+            {/* Why join us */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">Why join us</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                <li><strong className="text-ocean-900">Flexible, booking-based work</strong> that fits around your life</li>
+                <li>Care for families in beautiful hotels and villas near you</li>
+                <li>A warm, family-run team that treats you the way we treat our families</li>
+                <li>Grow with us as we expand across Sri Lanka</li>
+              </ul>
+              <p className="mt-4">
+                <strong className="text-ocean-900">Pay:</strong> attractive, booking-based
+                earnings — you&apos;re paid a generous share of every booking, and tips are
+                always yours to keep. We&apos;ll discuss the details when we talk.
+              </p>
+            </section>
+
             {/* Where we're hiring */}
             <section>
               <h2 className="text-xl font-bold text-ocean-950 mb-4">Where we&apos;re hiring</h2>
@@ -112,7 +143,8 @@ export default function CareersPage() {
                 We especially welcome those with
               </p>
               <p className="text-lg font-semibold text-white">
-                Overseas childcare experience · or luxury / high-end hotel hospitality
+                Overseas childcare experience · high-end hotel hospitality · a second
+                language such as French or Spanish is a lovely bonus
               </p>
             </section>
 
@@ -128,19 +160,50 @@ export default function CareersPage() {
               </p>
             </section>
 
+            {/* What to include */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">In your email, please tell us</h2>
+              <ul className="space-y-2 list-disc pl-5">
+                <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
+                <li>Which area you&apos;re based in</li>
+                <li>Your childcare experience (raising your own children counts!)</li>
+                <li>How comfortable you are speaking English</li>
+                <li>Your general availability</li>
+                <li>Whether you can travel to hotels and villas in your area</li>
+                <li>Any references you can share</li>
+              </ul>
+            </section>
+
+            {/* What happens next */}
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-4">What happens next</h2>
+              <p>
+                We read every application and reach out for a friendly chat. For the right fit,
+                we complete background and reference checks before warmly welcoming you to the
+                team.
+              </p>
+            </section>
+
             {/* How to apply */}
             <section className="text-center pt-2">
-              <h2 className="text-2xl font-bold text-ocean-950 mb-3">How to apply</h2>
+              <h2 className="text-2xl font-bold text-ocean-950 mb-3">
+                {HIRING_OPEN ? 'How to apply' : 'Join our waitlist'}
+              </h2>
               <p className="mb-6">
-                Send your resume with a little about yourself, your experience, and your
-                location. We&apos;d love to meet you.
+                {HIRING_OPEN ? (
+                  <>
+                    Send your resume with a little about yourself, your experience, and your
+                    location to the email below. We&apos;d love to meet you.
+                  </>
+                ) : (
+                  <>
+                    We&apos;re not actively hiring right now, but we&apos;re always glad to meet
+                    wonderful caregivers. Send your details to the email below and we&apos;ll
+                    reach out the moment a spot opens near you.
+                  </>
+                )}
               </p>
-              <a
-                href="mailto:ceylonnannies@gmail.com?subject=Childcare%20Professional%20Application"
-                className="inline-flex items-center gap-2 bg-ocean-600 hover:bg-ocean-700 text-white px-6 py-3 rounded-full font-medium transition-all hover:scale-105"
-              >
-                Email us at ceylonnannies@gmail.com
-              </a>
+              <CopyEmail />
               <p className="mt-8 text-ocean-500 italic">
                 Ceylon Nannies — caring for families the way we&apos;d care for our own.
               </p>
