@@ -150,16 +150,34 @@ export default function CareersPage() {
               </p>
             </section>
 
-            {/* Standards */}
+            {/* How we choose our nannies — vetting showcase (dual audience:
+                reassures applicants of a high bar AND shows parents our rigor) */}
             <section className="bg-sand-50 border border-sand-200 rounded-2xl p-6 md:p-8">
-              <h2 className="text-xl font-bold text-ocean-950 mb-3">Our standards</h2>
-              <p>
-                Every childcare professional must pass a{' '}
-                <strong className="text-ocean-900">thorough background check</strong>, provide a{' '}
-                <strong className="text-ocean-900">clear police record</strong>, and consent to{' '}
-                <strong className="text-ocean-900">reference checks</strong> from past jobs — the
-                same care and diligence every family trusts us with.
+              <h2 className="text-xl font-bold text-ocean-950 mb-2">How we choose our nannies</h2>
+              <p className="mb-5">
+                We hire the way you&apos;d choose someone for your own child — because that&apos;s
+                exactly the standard we started with. Only a small number of applicants meet it.
+                Every nanny who joins us passes:
               </p>
+              <ol className="space-y-3">
+                {[
+                  { t: 'Identity verified', d: 'We confirm government-issued ID (NIC) — every nanny is a real, identifiable person.' },
+                  { t: 'Clear police record', d: 'A police clearance check with no concerning history.' },
+                  { t: 'References we personally call', d: 'We speak to past families and employers and ask the question that matters: would you trust this person with your own child again?' },
+                  { t: 'A face-to-face interview', d: 'We meet every candidate in person or by video — never hired from a résumé alone.' },
+                  { t: 'Observed with a child', d: 'We watch how they actually are with children — warmth, patience, attentiveness — before they ever care for yours.' },
+                  { t: 'Fluent English', d: 'A safety standard, not a preference — so allergies, routines, and emergencies are always understood clearly.' },
+                ].map((step, i) => (
+                  <li key={step.t} className="flex gap-3">
+                    <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-ocean-600 text-white text-xs font-bold mt-0.5">
+                      {i + 1}
+                    </span>
+                    <span>
+                      <strong className="text-ocean-900">{step.t}</strong> — {step.d}
+                    </span>
+                  </li>
+                ))}
+              </ol>
             </section>
 
             {/* What to include */}
