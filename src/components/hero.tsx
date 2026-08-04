@@ -72,6 +72,20 @@ Colombo · Kandy · Ella · South Coast
           </div>
         </div>
       </div>
+
+      {/* Decorative brand banner — sets the beach-holiday mood. Aspirational
+          imagery (not a specific nanny/client). Logo/tagline are baked into
+          the image, so no caption. */}
+      <div className="relative mt-12 md:mt-16 max-w-5xl mx-auto px-4">
+        <img
+          src="/hero-banner.jpg"
+          alt="A nanny playing on a Sri Lankan beach with a young child under the palms"
+          className="w-full h-auto rounded-2xl shadow-xl"
+          width={1604}
+          height={1362}
+          loading="lazy"
+        />
+      </div>
     </section>
   )
 }
