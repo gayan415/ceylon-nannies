@@ -214,11 +214,9 @@ export default function CareersPage() {
               <ul className="max-w-xl mx-auto space-y-1.5 list-disc pl-5 mb-6">
                 <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
                 <li>Which area you&apos;re based in</li>
-                <li>Your childcare experience (raising your own children counts!)</li>
-                <li>How comfortable you are speaking English</li>
+                <li>A little about your experience with children (raising your own counts!)</li>
+                <li>How many hours a week you&apos;re hoping to work</li>
                 <li>Your general availability</li>
-                <li>Whether you can travel to hotels and villas in your area</li>
-                <li>Any references you can share</li>
               </ul>
 
               {/* Write-it-yourself note — doubles as a passion filter */}
