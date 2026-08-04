@@ -215,8 +215,7 @@ export default function CareersPage() {
                 <li><strong className="text-ocean-900">What you love most about caring for children</strong></li>
                 <li>Which area you&apos;re based in</li>
                 <li>A little about your experience with children (raising your own counts!)</li>
-                <li>How many hours a week you&apos;re hoping to work</li>
-                <li>Your general availability</li>
+                <li>Your availability — which days/times, and roughly how many hours a week</li>
               </ul>
 
               {/* Write-it-yourself note — doubles as a passion filter */}
