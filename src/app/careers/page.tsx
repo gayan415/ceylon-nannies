@@ -6,9 +6,12 @@ import { CopyEmail } from '@/components/copy-email'
 import { HIRING_OPEN, HIRING_SEASON } from '@/lib/hiring'
 
 export const metadata: Metadata = {
-  title: 'We\'re Hiring Childcare Professionals — Ceylon Nannies',
-  description:
-    'Join Ceylon Nannies — a warm, family-run premier childcare service for travelling families in Sri Lanka. We\'re hiring caring, English-speaking childcare professionals across the west coast, hill country, and south coast.',
+  title: HIRING_OPEN
+    ? 'We\'re Hiring Childcare Professionals — Ceylon Nannies'
+    : 'Join Our Team — Ceylon Nannies',
+  description: HIRING_OPEN
+    ? 'Ceylon Nannies is hiring caring, English-speaking childcare professionals across Sri Lanka\'s west coast, hill country, and south coast. A warm, family-run premier service for travelling families.'
+    : 'Ceylon Nannies is a warm, family-run premier childcare service for travelling families in Sri Lanka. Join our waitlist of caring childcare professionals — we\'ll reach out when a spot opens near you.',
 }
 
 const HIRING_REGIONS = [
@@ -76,9 +79,8 @@ export default function CareersPage() {
               a job.&rdquo;</strong> Ceylon Nannies is a warm, family-run team caring for
               travelling families visiting Sri Lanka — and we&apos;re looking for people who
               genuinely light up around children: who play, comfort, and care the way they
-              would for their own. If you find real joy in a little one&apos;s laugh, speak
-              beautiful English, and take pride in thoughtful, professional care, we&apos;d
-              love to hear from you.
+              would for their own. If you find real joy in a little one&apos;s laugh and take
+              pride in thoughtful, professional care, we&apos;d love to hear from you.
             </p>
           </div>
 
@@ -155,8 +157,8 @@ export default function CareersPage() {
                 Every childcare professional must pass a{' '}
                 <strong className="text-ocean-900">thorough background check</strong>, provide a{' '}
                 <strong className="text-ocean-900">clear police record</strong>, and consent to{' '}
-                <strong className="text-ocean-900">reference checks</strong> from past jobs. It&apos;s
-                how we care for families the way we&apos;d care for our own.
+                <strong className="text-ocean-900">reference checks</strong> from past jobs — the
+                same care and diligence every family trusts us with.
               </p>
             </section>
 
