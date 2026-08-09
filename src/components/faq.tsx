@@ -8,12 +8,12 @@ const faqs = [
     a: 'You provide all food, drinks, diapers, wipes, and any medication for your child — this ensures allergy safety, as we never feed your child anything you haven\'t approved. It also helps to leave a few notes on your child\'s routine (nap times, comfort items, bedtime) and an emergency contact number so your nanny can reach you or a local point of contact if needed.',
   },
   {
-    q: 'How does the camera system work?',
-    a: 'The live camera is an optional add-on available on request for an extra charge. When requested, we set up a dedicated phone as a live camera in the room — you receive a link on your phone and can watch the live video feed anytime during the session. Video only — no audio. You can call our nanny on WhatsApp anytime to hear or speak.',
+    q: 'Can I check in on my child during the session?',
+    a: 'Yes — anytime you like. Just message us or your nanny, and she\'ll video-call you so you can see and speak to your little one, wherever you are. It\'s a simple WhatsApp video call — no app to install, nothing recorded, and always free.',
   },
   {
-    q: 'Is the camera included by default?',
-    a: 'No, the live camera is an optional add-on. It is available on request for an extra charge. Message us for pricing if you\'d like it included in your booking.',
+    q: 'How often can I request a video check-in?',
+    a: 'As often as you\'d like during the session — whether you\'re at dinner, on the beach, or out exploring. Peace of mind is part of the service, never an add-on.',
   },
   {
     q: 'What ages do you accept?',

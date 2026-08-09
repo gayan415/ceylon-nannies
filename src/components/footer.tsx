@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-sm text-ocean-400 leading-relaxed">
               Premier childcare for traveling families — we come to your hotel, villa, or Airbnb across Sri Lanka&apos;s
-              west coast, hill country, and south coast. English service. Live camera available on request.
+              west coast, hill country, and south coast. English service. Video check-ins on request.
             </p>
           </div>
 

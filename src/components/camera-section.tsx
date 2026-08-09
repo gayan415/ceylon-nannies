@@ -5,28 +5,28 @@ export function CameraSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-ocean-800 px-3 py-1.5 rounded-full text-sm text-ocean-200 mb-6">
-              <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              Live Camera System
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              Video Check-Ins
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              Watch your child{' '}
-              <span className="text-ocean-300">anytime, anywhere</span>
+              See your little one{' '}
+              <span className="text-ocean-300">anytime you like</span>
             </h2>
 
             <p className="text-ocean-200 text-lg mb-8 leading-relaxed">
-              Our live camera system means you can check in on your little one
-              from the restaurant, the beach, or anywhere with a phone signal.
-              Available on request as an add-on — because trust isn&apos;t optional when it comes to your children.
+              Enjoying dinner, the beach, or a spa afternoon? Whenever you&apos;d like to
+              check in, just ask — your nanny will video-call you so you can see your
+              little one, wherever you are. Because peace of mind is part of the service.
             </p>
 
             <ul className="space-y-4">
               {[
-                'Live video streaming directly to your phone',
-                'Video-only — call WhatsApp anytime to hear or speak',
-                'All recordings stored for 7 days',
-                'Optional add-on — available on request for an extra charge',
-                'Hotel WiFi + mobile data backup for reliability',
+                'Video check-in with your nanny, on request',
+                'See and speak to your child in real time',
+                'As often as you like during the session — just message us',
+                'No app to install — a simple WhatsApp video call',
+                'Always free — peace of mind is never an add-on',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-ocean-300 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -43,9 +43,9 @@ export function CameraSection() {
               <div className="aspect-[9/16] max-w-[240px] mx-auto bg-ocean-800 rounded-[2rem] p-2 shadow-2xl">
                 <div className="w-full h-full bg-ocean-700 rounded-[1.5rem] flex flex-col items-center justify-center relative overflow-hidden">
                   <div className="absolute top-3 left-0 right-0 flex justify-center">
-                    <div className="flex items-center gap-1.5 bg-red-500/90 px-2.5 py-1 rounded-full">
+                    <div className="flex items-center gap-1.5 bg-green-500/90 px-2.5 py-1 rounded-full">
                       <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
-                      <span className="text-[10px] text-white font-medium">LIVE</span>
+                      <span className="text-[10px] text-white font-medium">ON CALL</span>
                     </div>
                   </div>
 
@@ -55,8 +55,8 @@ export function CameraSection() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25z" />
                       </svg>
                     </div>
-                    <p className="text-ocean-200 text-xs">Your child&apos;s live feed</p>
-                    <p className="text-ocean-400 text-[10px] mt-1">Tap to view fullscreen</p>
+                    <p className="text-ocean-200 text-xs">Video call with your nanny</p>
+                    <p className="text-ocean-400 text-[10px] mt-1">See your little one anytime</p>
                   </div>
 
                   <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3">

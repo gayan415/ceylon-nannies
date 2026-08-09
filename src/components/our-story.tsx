@@ -56,7 +56,7 @@ export function OurStory() {
             <p>
               Ceylon Nannies is the service we designed as engineers and tested as parents. It began
               with the nanny we personally trusted with our own children — and from there we built a
-              proper standard: North American procedures, optional live camera access, signed
+              proper standard: North American procedures, video check-ins on request, signed
               agreements, and background checks for every nanny who joins us.
             </p>
 
@@ -77,7 +77,7 @@ export function OurStory() {
             <p>
               Today, we serve families from Europe, Australia, North America, and beyond — across
               Sri Lanka, from Colombo and Kandy to the south coast. Our nannies speak fluent English,
-              optional live camera access lets you check in anytime, and every booking comes with the
+              video check-ins let you see your little one anytime, and every booking comes with the
               same care and accountability we demand for our own family.
             </p>
 

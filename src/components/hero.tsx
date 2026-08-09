@@ -44,7 +44,7 @@ Colombo · Kandy · Ella · South Coast
         </div>
 
         <p className="text-lg md:text-xl text-ocean-700 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Premier in-hotel nanny and babysitter service on Sri Lanka&apos;s west coast, hill country, and south coast. Live camera access available on request.
+          Premier in-hotel nanny and babysitter service on Sri Lanka&apos;s west coast, hill country, and south coast. Video check-ins on request.
           Enjoy your evening — they&apos;re in safe hands.
         </p>
 
@@ -69,7 +69,7 @@ Colombo · Kandy · Ella · South Coast
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-ocean-600">
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-            Live camera (on request)
+            Video check-ins on request
           </div>
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>

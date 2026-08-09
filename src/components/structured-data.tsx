@@ -4,7 +4,7 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Ceylon Nannies',
-    description: 'Premier English-speaking nanny and babysitter service across Sri Lanka — Colombo, Kandy, Galle, and the south coast. In-hotel and in-villa childcare for traveling families. Live camera access available on request.',
+    description: 'Premier English-speaking nanny and babysitter service across Sri Lanka — Colombo, Kandy, Galle, and the south coast. In-hotel and in-villa childcare for traveling families. Video check-ins on request.',
     url: 'https://ceylonnannies.com',
     telephone: '+14034044643',
     email: 'ceylonnannies@gmail.com',
