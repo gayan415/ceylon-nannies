@@ -5,10 +5,11 @@ import { WhatsAppIcon } from './icons'
 
 const RATES = [
   { label: '2 hours', hours: 2, price: 35 },
-  { label: '4 hours', hours: 4, price: 55 },
-  { label: '6 hours', hours: 6, price: 75 },
-  { label: '8 hours', hours: 8, price: 90 },
+  { label: '4 hours', hours: 4, price: 59 },
+  { label: '8 hours', hours: 8, price: 99 },
 ]
+
+const EXTRA_HOUR_RATE = 13
 
 export function Calculator() {
   const [hours, setHours] = useState(4)
@@ -16,7 +17,7 @@ export function Calculator() {
   const [extraHours, setExtraHours] = useState(0)
 
   const baseRate = RATES.find(r => r.hours === hours)
-  const dailyRate = (baseRate?.price || 0) + (extraHours * 12)
+  const dailyRate = (baseRate?.price || 0) + (extraHours * EXTRA_HOUR_RATE)
   const total = dailyRate * days
 
   return (
@@ -35,7 +36,7 @@ export function Calculator() {
           {/* Session duration */}
           <div>
             <label className="block text-sm font-medium text-ocean-800 mb-2">Session duration</label>
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {RATES.map(r => (
                 <button
                   key={r.hours}
@@ -55,7 +56,7 @@ export function Calculator() {
           {/* Extra hours */}
           <div>
             <label className="block text-sm font-medium text-ocean-800 mb-2">
-              Extra hours beyond {hours}hr ($12/hr each)
+              Extra hours beyond {hours}hr (${EXTRA_HOUR_RATE}/hr each)
             </label>
             <div className="flex items-center gap-3">
               <button
@@ -72,7 +73,7 @@ export function Calculator() {
                 +
               </button>
               <span className="text-sm text-ocean-500">
-                {extraHours > 0 && `+$${extraHours * 12}`}
+                {extraHours > 0 && `+$${extraHours * EXTRA_HOUR_RATE}`}
               </span>
             </div>
           </div>
@@ -100,7 +101,7 @@ export function Calculator() {
           {/* Breakdown */}
           <div className="border-t border-ocean-200 pt-5 space-y-2">
             <div className="flex justify-between text-sm text-ocean-600">
-              <span>Daily rate ({hours}hr{extraHours > 0 && ` + ${extraHours}hr overtime`})</span>
+              <span>Daily rate ({hours}hr{extraHours > 0 && ` + ${extraHours} extra hr`})</span>
               <span>${dailyRate}/day</span>
             </div>
             {days > 1 && (
@@ -117,7 +118,7 @@ export function Calculator() {
 
           {/* CTA */}
           <a
-            href={`https://wa.me/14034044643?text=${encodeURIComponent(`Hi Ceylon Nannies! I'd like to book:\n• ${hours}hr${extraHours > 0 ? ` + ${extraHours}hr overtime` : ''} per day\n• ${days} day${days > 1 ? 's' : ''}\n• Estimated total: $${total.toFixed(2)} USD`)}`}
+            href={`https://wa.me/14034044643?text=${encodeURIComponent(`Hi Ceylon Nannies! I'd like to book:\n• ${hours}hr${extraHours > 0 ? ` + ${extraHours} extra hr` : ''} per day\n• ${days} day${days > 1 ? 's' : ''}\n• Estimated total: $${total.toFixed(2)} USD`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full bg-green-500 hover:bg-green-600 text-white py-3.5 rounded-full font-medium transition-all hover:scale-[1.02]"

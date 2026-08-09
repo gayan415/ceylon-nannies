@@ -2,10 +2,9 @@ import { WhatsAppIcon } from './icons'
 
 export function Pricing() {
   const plans = [
-    { duration: '2 hours', price: 35, label: 'Quick', perHour: '17.50', popular: false, useCase: 'Perfect for a quick dinner out' },
-    { duration: '4 hours', price: 55, label: 'Standard', perHour: '13.75', popular: true, useCase: 'Dinner, drinks & a beach walk' },
-    { duration: '6 hours', price: 75, label: 'Extended', perHour: '12.50', popular: false, useCase: 'Sunset session to late-night' },
-    { duration: '8 hours', price: 90, label: 'Full Day', perHour: '11.25', popular: false, useCase: 'Day trip, surf, or full work day' },
+    { duration: '2 hours', price: 35, label: 'Quick', popular: false, useCase: 'Sneak out for a walk & coffee ☕' },
+    { duration: '4 hours', price: 59, label: 'Standard', popular: true, useCase: 'Sunset dinner, drinks & a beach stroll 🌅' },
+    { duration: '8 hours', price: 99, label: 'Full Day', popular: false, useCase: 'Day trip, surf or a lazy poolside day 🏄' },
   ]
 
   return (
@@ -39,7 +38,7 @@ export function Pricing() {
           </span>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid sm:grid-cols-3 gap-6 mb-6 max-w-4xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.label}
@@ -54,13 +53,17 @@ export function Pricing() {
               )}
               <div className="text-sm font-medium text-ocean-500 mb-1">{plan.label}</div>
               <div className="text-3xl font-bold text-ocean-950 mb-1">${plan.price} <span className="text-base font-normal text-ocean-400">USD</span></div>
-              <div className="text-xs text-ocean-400 mb-4">{plan.duration} &middot; ${plan.perHour}/hr</div>
+              <div className="text-xs text-ocean-400 mb-4">{plan.duration}</div>
               <div className="pt-4 border-t border-ocean-50">
                 <p className="text-sm text-ocean-600 italic">{plan.useCase}</p>
               </div>
             </div>
           ))}
         </div>
+
+        <p className="text-center text-sm text-ocean-500 mb-10">
+          Need longer? Add <span className="font-semibold text-ocean-700">extra hours at $13/hour</span> to any session.
+        </p>
 
         <div className="mb-10 bg-gradient-to-br from-sand-50 to-ocean-50 border-2 border-sand-200 rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
@@ -91,7 +94,7 @@ export function Pricing() {
 
         <div className="text-center">
           <p className="text-sm text-ocean-500 mb-4">
-            Overtime after 8 hours: $12 USD per hour.
+            Additional hours (including beyond a full day) are $13 USD per hour.
           </p>
           <p className="text-sm text-ocean-500 mb-4">
             Have 3-4 children? We provide a second nanny for focused care at a discounted rate — contact us to arrange.
