@@ -35,7 +35,7 @@ export function TownPage({ town }: { town: Town }) {
     telephone: '+14034044643',
     areaServed: { '@type': 'City', name: `${town.name}, Sri Lanka` },
     availableLanguage: 'English',
-    priceRange: '$35-$90 USD',
+    priceRange: '$35-$99 USD',
   })
 
   const otherTowns = TOWNS.filter((t) => t.slug !== town.slug)
