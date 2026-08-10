@@ -24,9 +24,9 @@ export function About() {
 
             <div className="space-y-4">
               {[
-                { label: 'Age range', value: '0-6 years (all ages welcome)' },
-                { label: 'Languages', value: 'Fluent English + Sinhala' },
-                { label: 'Experience', value: 'Raising Canadian, American & Australian children' },
+                { label: 'Age range', value: 'All ages welcome' },
+                { label: 'Languages', value: 'Fluent English + Sinhala (French also spoken)' },
+                { label: 'Experience', value: 'Raising Canadian, American & Australian children · special-needs experience' },
                 { label: 'Capacity', value: 'Maximum 2 children per nanny (more with a second nanny)' },
                 { label: 'Availability', value: 'Any time, any day — year-round' },
                 { label: 'Vetting', value: 'Every nanny police-verified and background-checked' },

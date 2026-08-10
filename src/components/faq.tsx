@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'What ages do you accept?',
-    a: 'We care for children aged 0-6 years. Our nannies are experienced with all ages in this range, from infants to active toddlers.',
+    a: 'All ages welcome — from newborns and infants to active toddlers and older children. Just tell us your children\'s ages and we\'ll match you with the right nanny. We also have experience caring for children with special needs — let us know and we\'ll make sure the fit is right.',
   },
   {
     q: 'How many children per nanny?',
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'What language does the nanny speak?',
-    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Our nannies care for Canadian, American, and Australian children and communicate fluently in English daily.',
+    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Our nannies care for Canadian, American, and Australian children and communicate fluently in English daily. One of our nannies also speaks French — let us know if that would help your family.',
   },
   {
     q: 'I\'m a first-time client — how do I get started?',

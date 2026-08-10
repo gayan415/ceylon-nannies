@@ -27,7 +27,7 @@ export function StructuredData() {
     ],
     serviceType: 'Babysitter',
     priceRange: '$35-$99 USD',
-    availableLanguage: 'English',
+    availableLanguage: ['English', 'French'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Nanny Services',
