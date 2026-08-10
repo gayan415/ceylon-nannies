@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'What language does the nanny speak?',
-    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Our nannies care for Canadian, American, and Australian children and communicate fluently in English daily. One of our nannies also speaks French — let us know if that would help your family.',
+    a: 'Our service is conducted entirely in English — this is a safety requirement, so instructions, allergy details, and any concerns are always understood clearly by everyone. Our nannies care for Canadian, American, and Australian children and communicate fluently in English daily. One of our nannies is also fluent in French — let us know if that would help your family.',
   },
   {
     q: 'I\'m a first-time client — how do I get started?',
