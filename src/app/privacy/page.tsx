@@ -57,19 +57,18 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-ocean-950 mb-3">The optional live camera feed</h2>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">Video check-ins</h2>
               <p className="mb-3">
-                Live camera access is an optional add-on you can request. When you use it:
+                Whenever you&apos;d like, you can request a video check-in and your nanny will
+                video-call you to see your little one. When you use it:
               </p>
               <ul className="space-y-2 list-disc pl-5">
-                <li><strong>Video only</strong> — the feed carries no audio.</li>
+                <li>It&apos;s a <strong>live video call</strong> between you and your nanny — nothing is recorded or stored.</li>
                 <li>
-                  <strong>Recordings are kept for 7 days</strong>, then automatically and
-                  permanently deleted.
+                  <strong>The call is private</strong> — just between you and Ceylon Nannies, never shared with anyone else.
                 </li>
                 <li>
-                  <strong>Access is private</strong> — only you and Ceylon Nannies can view
-                  the feed and recordings. They are never shared with anyone else.
+                  You can check in <strong>as often as you like</strong> during the session — simply message us.
                 </li>
               </ul>
             </section>

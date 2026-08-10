@@ -3,7 +3,7 @@ export function TrustSection() {
     'We never take your child outside without your written permission',
     'We never feed your child anything — you provide all food and drinks',
     'We never administer medication without your signed consent form',
-    'If you add live camera access, we never switch it off during your session',
+    'We never refuse a video check-in — call to see your little one anytime',
     'We never share your personal details with anyone',
   ]
 
