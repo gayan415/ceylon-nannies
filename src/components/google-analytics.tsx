@@ -4,8 +4,12 @@ import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
 import { track } from '@/lib/analytics'
+import { ConsentBanner } from './consent-banner'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+
+// EU/EEA + UK + Switzerland — analytics need opt-in consent here.
+const EU_REGIONS = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']
 
 // Site-wide event tracking, driven by data attributes so components stay
 // plain markup:
@@ -73,14 +77,26 @@ export function GoogleAnalytics() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+          // Consent defaults MUST come before anything else. EU/EEA, UK and
+          // Switzerland: analytics off until the visitor accepts the banner.
+          // Everywhere else: on (opt-out via "Cookie settings"). No ads, ever.
           gtag('consent', 'default', {
-            analytics_storage: 'granted'
+            analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+            region: ${JSON.stringify(EU_REGIONS)}
           });
+          gtag('consent', 'default', {
+            analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'
+          });
+          try {
+            var c = localStorage.getItem('cn_consent');
+            if (c === 'granted' || c === 'denied') gtag('consent', 'update', { analytics_storage: c });
+          } catch (e) {}
+          gtag('js', new Date());
           gtag('config', '${GA_ID}');
         `}
       </Script>
       <AnalyticsEvents />
+      <ConsentBanner />
     </>
   )
 }

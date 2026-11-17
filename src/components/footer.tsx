@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { WhatsAppIcon } from './icons'
 import { Logo } from './logo'
 import { TOWNS } from '@/lib/towns'
+import { CookieSettingsLink } from './consent-banner'
 
 export function Footer() {
   return (
@@ -72,6 +73,8 @@ export function Footer() {
             <Link href="/careers" className="hover:text-white transition-colors">Join Our Team</Link>
             <span className="text-ocean-700">&middot;</span>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <span className="text-ocean-700">&middot;</span>
+            <CookieSettingsLink className="hover:text-white transition-colors" />
           </div>
           <p className="text-xs text-ocean-500">
             Service conducted in English for your child&apos;s safety.
