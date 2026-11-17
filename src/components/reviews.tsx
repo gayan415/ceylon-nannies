@@ -1,24 +1,18 @@
 import { GOOGLE_MAPS_URL } from '@/lib/reviews'
-import { ReviewCarousel, Stars } from './review-carousel'
+import { ReviewCarousel } from './review-carousel'
 
 export function Reviews() {
   return (
-    <section id="reviews" className="py-16 md:py-24 bg-ocean-950">
+    <section id="reviews" className="py-12 md:py-16 bg-ocean-950">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-ocean-800 px-4 py-1.5 rounded-full text-sm text-sand-300 mb-4">
-            <Stars rating={5} />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             Loved by Families on Holiday
           </h2>
-          <p className="text-ocean-300 max-w-xl mx-auto">
-            Real words from real parents who enjoyed their evening while their little
-            ones were in safe hands.
-          </p>
+          <p className="text-ocean-300">Real reviews from real families on Google</p>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-8">
           <ReviewCarousel />
         </div>
 
