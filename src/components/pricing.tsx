@@ -61,6 +61,11 @@ export function Pricing() {
           ))}
         </div>
 
+        <p className="flex items-center justify-center gap-1.5 text-center text-sm text-ocean-600 mb-3">
+          <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" /></svg>
+          Pay securely by card through Stripe, after your session · USD
+        </p>
+
         <p className="text-center text-sm text-ocean-500 mb-10">
           Need longer? Add <span className="font-semibold text-ocean-700">extra hours at $13/hour</span> to any session.
         </p>
@@ -100,7 +105,7 @@ export function Pricing() {
             Have 3-4 children? We provide a second nanny for focused care at a discounted rate — contact us to arrange.
           </p>
           <p className="text-xs text-ocean-400">
-            Prices in USD. Prefer to pay in LKR? We convert at the Sri Lanka Central Bank rate on the day of payment.
+            All prices in USD. Paid by card through a secure Stripe link after your session — we never handle cash.
           </p>
         </div>
       </div>

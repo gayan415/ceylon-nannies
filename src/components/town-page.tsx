@@ -36,6 +36,8 @@ export function TownPage({ town }: { town: Town }) {
     areaServed: { '@type': 'City', name: `${town.name}, Sri Lanka` },
     availableLanguage: 'English',
     priceRange: '$35-$99 USD',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Credit Card, Debit Card',
   })
 
   const otherTowns = TOWNS.filter((t) => t.slug !== town.slug)

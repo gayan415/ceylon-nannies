@@ -8,7 +8,7 @@ Trusted nanny & babysitter service for traveling families — Sri Lanka's south 
 
 - In-hotel & in-villa nanny service with live camera access (Zoom Pro)
 - English-speaking, background-verified nanny
-- Live USD → LKR exchange rate conversion
+- USD pricing — card payments via Stripe after each session
 - WhatsApp booking flow
 - SEO optimized for south coast Sri Lanka
 
@@ -18,7 +18,7 @@ Trusted nanny & babysitter service for traveling families — Sri Lanka's south 
 - **Styling**: Tailwind CSS
 - **Hosting**: Vercel
 - **DNS**: AWS Route 53
-- **Exchange Rate**: open.er-api.com (free, 6hr cache)
+- **Payments**: Stripe (payment links sent on WhatsApp — no on-site checkout)
 - **Analytics**: Google Analytics (GA4)
 
 ## Development

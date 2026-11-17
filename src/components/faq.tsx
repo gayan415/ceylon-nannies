@@ -41,7 +41,11 @@ const faqs = [
   },
   {
     q: 'How do I pay?',
-    a: 'We keep payment simple and flexible — caring for your child always comes first. Most families pay cash at your accommodation on the day of the session. Bank transfer is available on request (payments in LKR are calculated at the Sri Lanka Central Bank rate on the day). We\'ll confirm all the details with you before your booking so there are no surprises.',
+    a: 'Simply — and only after your session. Once your session is complete, we send you a secure Stripe payment link on WhatsApp, and you pay by card in a minute. All prices are in USD, and we never handle cash. We\'ll confirm your total with you before the booking so there are no surprises.',
+  },
+  {
+    q: 'Should I tip my nanny?',
+    a: 'Tips are never expected. If you\'re happy with your nanny\'s care and would like to say thank you, you\'re welcome to give it to her directly during the session — it\'s hers to keep. Ceylon Nannies never collects tips.',
   },
   {
     q: 'What\'s the cancellation policy?',

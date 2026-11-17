@@ -27,6 +27,8 @@ export function StructuredData() {
     ],
     serviceType: 'Babysitter',
     priceRange: '$35-$99 USD',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Credit Card, Debit Card',
     availableLanguage: ['English', 'French'],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
