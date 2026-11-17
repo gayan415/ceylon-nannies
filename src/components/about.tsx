@@ -53,7 +53,8 @@ export function About() {
                 <div className="text-xs text-ocean-500 mt-1">Background-verified nannies</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
-                <div className="text-2xl font-bold text-ocean-900">🇨🇦 🇺🇸 🇦🇺</div>
+                <div className="text-2xl font-bold text-ocean-900">7 countries</div>
+                <div className="text-sm mt-1" aria-hidden="true">🇺🇸 🇨🇦 🇦🇺 🇳🇱 🇮🇱 🇦🇪 🇮🇳</div>
                 <div className="text-xs text-ocean-500 mt-1">Families we&apos;ve cared for</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">

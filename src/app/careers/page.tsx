@@ -22,7 +22,7 @@ const HIRING_REGIONS = [
 
 const WHAT_YOULL_DO = [
   'Warm, attentive in-hotel & in-villa childcare',
-  'Care for children from Canada, the USA, Australia & the UK',
+  'Care for children from the USA, Canada, Australia, the Netherlands, Israel, the UAE & India',
   'Travel to hotels, villas & resorts in your area',
   'Deliver safe, professional, thoughtful care',
 ]

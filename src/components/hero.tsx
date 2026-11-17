@@ -40,7 +40,7 @@ Colombo · Kandy · Ella · South Coast
           </span>
           <span className="font-semibold text-ocean-900">5.0 on Google</span>
           <span className="text-ocean-300" aria-hidden="true">·</span>
-          <span>Loved by families from 🇺🇸 🇨🇦 🇦🇺 🇬🇧</span>
+          <span>Loved by families from 🇺🇸 🇨🇦 🇦🇺 🇳🇱 🇮🇱 🇦🇪 🇮🇳</span>
         </div>
 
         <p className="text-lg md:text-xl text-ocean-700 max-w-2xl mx-auto mb-8 leading-relaxed">
