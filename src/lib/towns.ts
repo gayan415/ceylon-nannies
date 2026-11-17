@@ -1,11 +1,11 @@
 // Town/city landing page data. One entry per page — the shared TownPage
 // template renders them all. South-coast towns use approved verbatim copy;
-// newer city pages (Colombo, Negombo, Kandy, Hambantota) use on-brand drafted copy.
+// newer city pages (Colombo, Negombo, Ella, Hambantota, Arugam Bay) use on-brand drafted copy.
 
 export type Town = {
   slug: string // e.g. 'nanny-galle' → /nanny-galle
   name: string // e.g. 'Galle'
-  region: 'South Coast' | 'Western' | 'Hill Country'
+  region: 'South Coast' | 'Western' | 'Hill Country' | 'East Coast'
   metaTitle: string
   metaDescription: string
   h1: string
@@ -186,23 +186,6 @@ export const TOWNS: Town[] = [
     ctaText: 'Message us on WhatsApp — we’re in Negombo',
   },
   {
-    slug: 'nanny-kandy',
-    name: 'Kandy',
-    region: 'Hill Country',
-    metaTitle: 'Nanny & Babysitter in Kandy, Sri Lanka — Hill-Country Childcare',
-    metaDescription:
-      'Premier English-speaking nanny service in Kandy. In-hotel and in-villa childcare near the lake, the Temple, and the hill country. Message us on WhatsApp for a quote.',
-    h1: 'Nanny & Babysitter in Kandy, Sri Lanka',
-    paragraphs: [
-      'Kandy is Sri Lanka’s cultural heart — the lake, the Temple of the Sacred Tooth, misty hills, and the cool green calm of the tea country all around. Families come for the history, the scenery, and the gentle change of pace from the coast.',
-      'But temple visits, cultural shows, and winding tea-country drives aren’t always toddler-friendly.',
-      'Our nanny comes to your hotel or villa anywhere in Kandy. Explore the Temple and the botanical gardens, enjoy a peaceful lakeside dinner, or take a day trip into the hills while your little one stays happy and rested on their own schedule — cared for by someone experienced, warm, and fluent in English.',
-      'We share your nanny’s details before your booking — with a quick video hello available if you’d like one — so there are no strangers on day one, your routines are followed exactly, and a video check-in on request lets you see your little one from wherever the day takes you.',
-      'Discover Kandy at your pace. We’ll keep the little ones content.',
-    ],
-    ctaText: 'Message us on WhatsApp — we’re in Kandy',
-  },
-  {
     slug: 'nanny-ella',
     name: 'Ella',
     region: 'Hill Country',
@@ -218,6 +201,23 @@ export const TOWNS: Town[] = [
       'Take in the view from the top. We’ll keep the little ones content below.',
     ],
     ctaText: 'Message us on WhatsApp — we’re in Ella',
+  },
+  {
+    slug: 'nanny-arugam-bay',
+    name: 'Arugam Bay',
+    region: 'East Coast',
+    metaTitle: 'Nanny & Babysitter in Arugam Bay, Sri Lanka — Surf-Town Childcare',
+    metaDescription:
+      'Premier English-speaking nanny service in Arugam Bay. In-hotel and in-villa childcare for surf sessions, safaris, and sunset dinners on Sri Lanka’s east coast. Message us on WhatsApp.',
+    h1: 'Nanny & Babysitter in Arugam Bay, Sri Lanka',
+    paragraphs: [
+      'Arugam Bay is Sri Lanka’s laid-back east-coast surf town — a long golden bay, the famous point break, elephants grazing by the lagoons, and a slow, barefoot rhythm that families fall for fast. From April to October, when the season swings east, there are few better places on the island to be.',
+      'And the best waves rarely wait for nap time.',
+      'Our nanny comes to your hotel, surf lodge, or villa anywhere around Arugam Bay. Paddle out at dawn, watch the sunset from Elephant Rock, or head off early to spot elephants at Kumana or the Pottuvil lagoon — while your little one stays happy and settled on their own schedule, cared for by someone warm, experienced, and fluent in English.',
+      'We share your nanny’s details before your booking — with a quick video hello available if you’d like one — so there are no strangers on day one. She follows your routines exactly, and a video check-in on request lets you see your little one from the beach, the lineup, or the lagoon.',
+      'Surf the point. We’ll take care of the little ones.',
+    ],
+    ctaText: 'Message us on WhatsApp — we’re in Arugam Bay',
   },
 ]
 

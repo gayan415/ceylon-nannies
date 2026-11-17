@@ -76,7 +76,7 @@ export function OurStory() {
 
             <p>
               Today, we serve families from Europe, Australia, North America, and beyond — across
-              Sri Lanka, from Colombo and Kandy to the south coast. Our nannies speak fluent English,
+              Sri Lanka, from Colombo and Ella to the south and east coasts. Our nannies speak fluent English,
               video check-ins let you see your little one anytime, and every booking comes with the
               same care and accountability we demand for our own family.
             </p>

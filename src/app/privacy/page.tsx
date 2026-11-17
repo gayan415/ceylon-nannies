@@ -41,8 +41,9 @@ export default function PrivacyPage() {
               </p>
               <ul className="space-y-2 list-disc pl-5">
                 <li>
-                  <strong>Contact details</strong> — your name and the phone number you use
-                  to message us on WhatsApp.
+                  <strong>Contact details</strong> — your name, the phone number you use
+                  to message us on WhatsApp, and your email address (so Stripe can send
+                  your payment receipt).
                 </li>
                 <li>
                   <strong>Booking details</strong> — your accommodation, dates, times, and
@@ -53,7 +54,30 @@ export default function PrivacyPage() {
                   with us, such as age, allergies, dietary needs, routines, and any medical
                   information relevant to their care.
                 </li>
+                <li>
+                  <strong>Payment records</strong> — the amount, date, and status of each
+                  payment. We never see or store your card details (see below).
+                </li>
               </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">Payments</h2>
+              <p>
+                All payments are made in USD by card through <strong>Stripe</strong>, a secure,
+                globally trusted payment provider. After your session we send you a Stripe
+                payment link on WhatsApp. Your card details are entered directly with Stripe
+                and handled under{' '}
+                <a
+                  href="https://stripe.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ocean-700 underline hover:text-ocean-900"
+                >
+                  Stripe&apos;s privacy policy
+                </a>
+                {' '}— Ceylon Nannies never sees or stores your card number. We do not accept cash.
+              </p>
             </section>
 
             <section>
@@ -77,8 +101,9 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-ocean-950 mb-3">How we use your information</h2>
               <p>
                 We use your information solely to arrange and provide your childcare booking,
-                to keep your child safe, and to stay in touch with you before, during, and
-                after the session. That&apos;s it.
+                to keep your child safe, to stay in touch with you before, during, and
+                after the session, and to keep accurate booking and payment records for our
+                accounts and audits. That&apos;s it.
               </p>
             </section>
 
@@ -86,7 +111,8 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-bold text-ocean-950 mb-3">We never sell or share your data</h2>
               <p>
                 We do not sell, rent, or share your personal information — or your child&apos;s
-                details — with any third parties for marketing or any other purpose. Your
+                details — with any third parties for marketing or any other purpose. The only
+                exception is Stripe, which processes your payment on our behalf. Otherwise, your
                 information stays between you and Ceylon Nannies.
               </p>
             </section>
@@ -96,7 +122,8 @@ export default function PrivacyPage() {
               <p>
                 You can ask us at any time to see, correct, or delete the information we hold
                 about you and your family. Just reach out and we&apos;ll take care of it
-                promptly.
+                promptly. (We may need to keep basic booking and payment records — your name,
+                contact details, and payment history — for our accounts and audits.)
               </p>
             </section>
 

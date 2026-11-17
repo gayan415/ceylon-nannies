@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/nanny-kandy", "destination": "/", "statusCode": 301 }
+  ]
+}

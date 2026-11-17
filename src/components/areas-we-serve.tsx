@@ -2,12 +2,13 @@ import Link from 'next/link'
 import { TOWNS } from '@/lib/towns'
 import { SERVICE_AREAS } from '@/lib/constants'
 
-const REGION_ORDER = ['Western', 'Hill Country', 'South Coast'] as const
+const REGION_ORDER = ['Western', 'Hill Country', 'South Coast', 'East Coast'] as const
 
 const REGION_LABELS: Record<string, string> = {
   Western: 'Colombo & Western Coast',
   'Hill Country': 'Hill Country',
   'South Coast': 'South Coast',
+  'East Coast': 'East Coast',
 }
 
 export function AreasWeServe() {
@@ -26,7 +27,7 @@ export function AreasWeServe() {
           </h2>
           <p className="text-ocean-600 max-w-xl mx-auto">
             From the moment you land in Colombo to your last sunset in the south, our nannies
-            travel to your hotel, villa, or home across the west coast, hill country, and south coast.
+            travel to your hotel, villa, or home across the west coast, hill country, south coast, and east coast.
           </p>
         </div>
 
@@ -36,12 +37,12 @@ export function AreasWeServe() {
               <h3 className="text-sm font-semibold text-ocean-500 uppercase tracking-wider text-center mb-4">
                 {group.label}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
                 {group.towns.map((town) => (
                   <Link
                     key={town.slug}
                     href={`/${town.slug}`}
-                    className="group bg-white border border-ocean-100 hover:border-ocean-300 rounded-xl px-4 py-4 shadow-sm transition-colors"
+                    className="group w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-0.5625rem)] bg-white border border-ocean-100 hover:border-ocean-300 rounded-xl px-4 py-4 shadow-sm transition-colors"
                   >
                     <span className="flex items-center justify-center gap-1.5 font-medium text-ocean-800">
                       {town.name}
@@ -83,8 +84,8 @@ export function AreasWeServe() {
         <p className="text-center text-xs text-ocean-300 mt-8 max-w-2xl mx-auto leading-relaxed">
           Ceylon Nannies provides premier English-speaking babysitter and nanny services across
           Sri Lanka. Whether you need a nanny in Colombo, a babysitter in Negombo, childcare in
-          Kandy or Ella, or a trusted nanny in Galle, Mirissa, Hiriketiya, Weligama, Unawatuna,
-          Tangalle, or Hambantota — we come to your hotel, villa, or home, with optional video
+          Ella, or a trusted nanny in Galle, Mirissa, Hiriketiya, Weligama, Unawatuna,
+          Tangalle, Hambantota, or Arugam Bay — we come to your hotel, villa, or home, with optional video
           check-ins available on request.
         </p>
       </div>
