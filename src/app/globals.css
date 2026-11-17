@@ -7,3 +7,13 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer utilities {
+  /* Horizontal carousels: keep swipe/scroll, hide the scrollbar */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

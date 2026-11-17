@@ -6,19 +6,8 @@ import { HowItWorks } from './how-it-works'
 import { TrackedWhatsAppCTA } from './tracked-whatsapp-cta'
 import { WhatsAppButton } from './whatsapp-button'
 import { TOWNS, townWhatsAppUrl, type Town } from '@/lib/towns'
-import { REVIEWS, GOOGLE_MAPS_URL } from '@/lib/reviews'
-
-function Stars() {
-  return (
-    <div className="flex items-center gap-0.5" aria-label="5 out of 5 stars">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} className="w-5 h-5 text-sand-400" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  )
-}
+import { GOOGLE_MAPS_URL } from '@/lib/reviews'
+import { ReviewCarousel } from './review-carousel'
 
 export function TownPage({ town }: { town: Town }) {
   const waUrl = townWhatsAppUrl(town.name)
@@ -88,21 +77,8 @@ export function TownPage({ town }: { town: Town }) {
         {/* Google reviews — placed high (right after intro) to build trust early */}
         <section className="py-14 md:py-16 bg-ocean-950">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="grid gap-6 md:grid-cols-2 items-start mb-8">
-              {REVIEWS.map((review) => (
-                <div
-                  key={review.author}
-                  className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg text-center md:text-left"
-                >
-                  <div className="flex justify-center md:justify-start mb-4">
-                    <Stars />
-                  </div>
-                  <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed whitespace-pre-line mb-4">
-                    &ldquo;{review.text}&rdquo;
-                  </blockquote>
-                  <div className="text-sm text-ocean-400">— {review.author}, {review.location}</div>
-                </div>
-              ))}
+            <div className="mb-8">
+              <ReviewCarousel />
             </div>
             <div className="flex justify-center">
               <a
