@@ -2,7 +2,7 @@ import { WhatsAppIcon } from './icons'
 
 export function Hero() {
   return (
-    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-ocean-50 to-white overflow-hidden">
+    <section data-section="hero" className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-ocean-50 to-white overflow-hidden">
       {/* Faint beach brand image as a background watermark — decorative/aspirational
           only (AI-generated), never presented as a real nanny. Kept very low
           opacity with a white gradient wash so hero text stays fully readable. */}
@@ -50,6 +50,7 @@ Colombo · Ella · South Coast · Arugam Bay
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
+            data-cta="hero"
             href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27d%20like%20to%20book%20a%20session."
             target="_blank"
             rel="noopener noreferrer"

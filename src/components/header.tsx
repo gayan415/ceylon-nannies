@@ -49,6 +49,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
+            data-cta="header"
             href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27d%20like%20to%20know%20more%20about%20your%20service."
             target="_blank"
             rel="noopener noreferrer"

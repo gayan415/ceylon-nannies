@@ -112,9 +112,31 @@ export default function PrivacyPage() {
               <p>
                 We do not sell, rent, or share your personal information — or your child&apos;s
                 details — with any third parties for marketing or any other purpose. The only
-                exception is Stripe, which processes your payment on our behalf. Otherwise, your
+                exceptions are Stripe, which processes your payment on our behalf, and Google
+                Analytics, which gives us website usage statistics (see below). Otherwise, your
                 information stays between you and Ceylon Nannies.
               </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-ocean-950 mb-3">Analytics &amp; cookies</h2>
+              <p className="mb-3">
+                We use <strong>Google Analytics</strong> to understand how visitors use our
+                website — for example, which pages are viewed and which buttons are tapped — so we
+                can improve it. It uses cookies and collects device and approximate-location
+                information. We don&apos;t use it for advertising, and it never includes your
+                child&apos;s details.
+              </p>
+              <ul className="space-y-2 list-disc pl-5">
+                <li>
+                  Visitors in the <strong>EU, UK, and Switzerland</strong> are asked first —
+                  analytics cookies stay off unless you accept.
+                </li>
+                <li>
+                  You can change your choice at any time using <strong>Cookie settings</strong> at
+                  the bottom of every page.
+                </li>
+              </ul>
             </section>
 
             <section>
@@ -133,6 +155,7 @@ export default function PrivacyPage() {
                 For any privacy questions or data requests, message us anytime:
               </p>
               <a
+                data-cta="privacy"
                 href="https://wa.me/14034044643"
                 target="_blank"
                 rel="noopener noreferrer"

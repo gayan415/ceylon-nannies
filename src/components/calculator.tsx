@@ -118,6 +118,8 @@ export function Calculator() {
 
           {/* CTA */}
           <a
+            data-cta="calculator"
+            data-value={total}
             href={`https://wa.me/14034044643?text=${encodeURIComponent(`Hi Ceylon Nannies! I'd like to book:\n• ${hours}hr${extraHours > 0 ? ` + ${extraHours} extra hr` : ''} per day\n• ${days} day${days > 1 ? 's' : ''}\n• Estimated total: $${total.toFixed(2)} USD`)}`}
             target="_blank"
             rel="noopener noreferrer"

@@ -49,7 +49,7 @@ export function TownPage({ town }: { town: Town }) {
 
       <main>
         {/* Hero — H1 + intro + CTA in first viewport */}
-        <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-ocean-50 to-white">
+        <section data-section="town-hero" className="pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-ocean-50 to-white">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-ocean-100 text-ocean-800 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -61,12 +61,12 @@ export function TownPage({ town }: { town: Town }) {
             <p className="text-lg text-ocean-700 leading-relaxed mb-8">
               {town.paragraphs[0]}
             </p>
-            <TrackedWhatsAppCTA href={waUrl} label={town.ctaText} ctaContext={ctaContext} />
+            <TrackedWhatsAppCTA href={waUrl} label={town.ctaText} ctaContext={ctaContext} position="top" />
           </div>
         </section>
 
         {/* Remaining intro copy */}
-        <section className="py-8 md:py-12 bg-white">
+        <section data-section="town-intro" className="py-8 md:py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 space-y-5 text-ocean-700 text-lg leading-relaxed">
             {town.paragraphs.slice(1).map((p, i) => (
               <p key={i}>{p}</p>
@@ -75,13 +75,15 @@ export function TownPage({ town }: { town: Town }) {
         </section>
 
         {/* Google reviews — placed high (right after intro) to build trust early */}
-        <section className="py-14 md:py-16 bg-ocean-950">
+        <section data-section="reviews" className="py-14 md:py-16 bg-ocean-950">
           <div className="max-w-4xl mx-auto px-4">
             <div className="mb-8">
               <ReviewCarousel />
             </div>
             <div className="flex justify-center">
               <a
+                data-event="google_reviews_click"
+                data-cta="town"
                 href={GOOGLE_MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,7 +115,7 @@ export function TownPage({ town }: { town: Town }) {
         <Pricing />
 
         {/* FAQ link + final CTA */}
-        <section className="py-16 md:py-20 bg-white">
+        <section data-section="town-final-cta" className="py-16 md:py-20 bg-white">
           <div className="max-w-2xl mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-ocean-950 mb-4">
               Ready to enjoy {town.name}?
@@ -125,12 +127,12 @@ export function TownPage({ town }: { town: Town }) {
               </Link>{' '}
               — or just message us and we&apos;ll help you plan.
             </p>
-            <TrackedWhatsAppCTA href={waUrl} label={town.ctaText} ctaContext={ctaContext} />
+            <TrackedWhatsAppCTA href={waUrl} label={town.ctaText} ctaContext={ctaContext} position="bottom" />
           </div>
         </section>
 
         {/* Cross-links to other towns */}
-        <section className="py-12 bg-ocean-50 border-t border-ocean-100">
+        <section data-section="town-crosslinks" className="py-12 bg-ocean-50 border-t border-ocean-100">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <p className="text-sm font-medium text-ocean-500 mb-4">
               We also serve these areas

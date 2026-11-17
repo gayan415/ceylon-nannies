@@ -39,3 +39,9 @@ export const REVIEWS: Review[] = [
 ]
 
 export const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
+
+// Opens our Google listing with the "write a review" box already open
+// (place ID + !12e1). Used by the /thank-you page and the
+// /review short link (src/app/review/page.tsx).
+export const GOOGLE_REVIEW_URL =
+  'https://www.google.com/maps/place//data=!4m3!3m2!1s0x207593e8aad6e063:0x226d9e9afb63f868!12e1'
