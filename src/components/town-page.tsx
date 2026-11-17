@@ -97,7 +97,7 @@ export function TownPage({ town }: { town: Town }) {
                   <div className="flex justify-center md:justify-start mb-4">
                     <Stars />
                   </div>
-                  <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed mb-4">
+                  <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed whitespace-pre-line mb-4">
                     &ldquo;{review.text}&rdquo;
                   </blockquote>
                   <div className="text-sm text-ocean-400">— {review.author}, {review.location}</div>

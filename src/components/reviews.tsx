@@ -22,7 +22,7 @@ function ReviewCard({ review }: { review: Review }) {
   return (
     <div className="bg-ocean-900 rounded-2xl p-6 md:p-8 border border-ocean-800 shadow-lg">
       <Stars rating={review.rating} />
-      <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed my-5">
+      <blockquote className="text-ocean-100 text-base md:text-lg leading-relaxed whitespace-pre-line my-5">
         &ldquo;{review.text}&rdquo;
       </blockquote>
       <div className="flex items-center gap-3">
