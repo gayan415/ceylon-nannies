@@ -113,7 +113,7 @@ export function ReviewCarousel() {
       {REVIEWS.length > 1 && (
         <div className="flex items-center justify-center gap-3 mt-6">
           <ArrowButton direction="prev" onClick={() => scroll(-1)} />
-          <span className="text-sm text-ocean-400">Swipe or tap to see all {REVIEWS.length} reviews</span>
+          <span className="text-sm text-ocean-400">Swipe for more reviews</span>
           <ArrowButton direction="next" onClick={() => scroll(1)} />
         </div>
       )}
