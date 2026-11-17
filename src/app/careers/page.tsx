@@ -10,14 +10,15 @@ export const metadata: Metadata = {
     ? 'We\'re Hiring Childcare Professionals — Ceylon Nannies'
     : 'Join Our Team — Ceylon Nannies',
   description: HIRING_OPEN
-    ? 'Ceylon Nannies is hiring caring, English-speaking childcare professionals across Sri Lanka\'s west coast, hill country, and south coast. A warm, family-run premier service for travelling families.'
+    ? 'Ceylon Nannies is hiring caring, English-speaking childcare professionals across Sri Lanka\'s west coast, hill country, south coast, and east coast. A warm, family-run premier service for travelling families.'
     : 'Ceylon Nannies is a warm, family-run premier childcare service for travelling families in Sri Lanka. Join our waitlist of caring childcare professionals — we\'ll reach out when a spot opens near you.',
 }
 
 const HIRING_REGIONS = [
   { region: 'West Coast', places: 'Colombo & Negombo' },
-  { region: 'Hill Country', places: 'Kandy & Ella' },
+  { region: 'Hill Country', places: 'Ella' },
   { region: 'South Coast', places: 'Galle, Hikkaduwa, Hiriketiya, Mirissa, Tangalle & Hambantota' },
+  { region: 'East Coast', places: 'Arugam Bay' },
 ]
 
 const WHAT_YOULL_DO = [

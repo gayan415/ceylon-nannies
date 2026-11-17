@@ -58,8 +58,8 @@ export function About() {
                 <div className="text-xs text-ocean-500 mt-1">Families we&apos;ve cared for</div>
               </div>
               <div className="bg-white rounded-xl p-5 shadow-sm border border-ocean-100">
-                <div className="text-2xl font-bold text-ocean-900">3 regions</div>
-                <div className="text-xs text-ocean-500 mt-1">West coast, hill country &amp; south coast</div>
+                <div className="text-2xl font-bold text-ocean-900">4 regions</div>
+                <div className="text-xs text-ocean-500 mt-1">West, south &amp; east coasts + hill country</div>
               </div>
             </div>
           </div>

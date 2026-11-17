@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: 'What if I\'m outside your service area?',
-    a: 'We currently serve three regions: the west coast (Colombo & Negombo), the hill country (Kandy & Ella), and the south coast (Galle through to Hambantota). Depending on your exact location within these areas, a small travel charge may apply. Staying somewhere else? Message us — if we can help or are expanding your way, we\'ll let you know honestly.',
+    a: 'We currently serve four regions: the west coast (Colombo & Negombo), the hill country (Ella), the south coast (Galle through to Hambantota), and the east coast (Arugam Bay). Depending on your exact location within these areas, a small travel charge may apply. Staying somewhere else? Message us — if we can help or are expanding your way, we\'ll let you know honestly.',
   },
 ]
 
