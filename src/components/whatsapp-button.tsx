@@ -3,6 +3,7 @@ import { WhatsAppIcon } from './icons'
 export function WhatsAppButton() {
   return (
     <a
+      data-cta="floating"
       href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27d%20like%20to%20book%20a%20session."
       target="_blank"
       rel="noopener noreferrer"

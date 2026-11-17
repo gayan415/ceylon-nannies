@@ -35,6 +35,7 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-3">Contact</h3>
             <a
+              data-cta="footer"
               href="https://wa.me/14034044643"
               target="_blank"
               rel="noopener noreferrer"

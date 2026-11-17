@@ -1,5 +1,6 @@
 {
   "redirects": [
-    { "source": "/nanny-kandy", "destination": "/", "statusCode": 301 }
+    { "source": "/nanny-kandy", "destination": "/", "statusCode": 301 },
+    { "source": "/review", "destination": "https://maps.app.goo.gl/otv4oL3UC8A2HLWt8", "statusCode": 302 }
   ]
 }

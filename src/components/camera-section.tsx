@@ -1,6 +1,6 @@
 export function CameraSection() {
   return (
-    <section className="py-12 md:py-16 bg-ocean-950 text-white">
+    <section data-section="video-check-ins" className="py-12 md:py-16 bg-ocean-950 text-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="inline-flex items-center gap-2 bg-ocean-800 px-3 py-1.5 rounded-full text-sm text-ocean-200 mb-5">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />

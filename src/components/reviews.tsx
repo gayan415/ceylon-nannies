@@ -18,6 +18,8 @@ export function Reviews() {
 
         <div className="flex justify-center">
           <a
+            data-event="google_reviews_click"
+            data-cta="home"
             href={GOOGLE_MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"

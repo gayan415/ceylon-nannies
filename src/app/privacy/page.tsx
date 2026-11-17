@@ -133,6 +133,7 @@ export default function PrivacyPage() {
                 For any privacy questions or data requests, message us anytime:
               </p>
               <a
+                data-cta="privacy"
                 href="https://wa.me/14034044643"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -39,3 +39,9 @@ export const REVIEWS: Review[] = [
 ]
 
 export const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/otv4oL3UC8A2HLWt8'
+
+// Where "Leave a Google review" buttons go (/thank-you page + /review short link
+// in vercel.json — keep both in sync). TODO: replace with the direct
+// "write a review" link from Google Business Profile → "Ask for reviews",
+// which opens the review box straight away. Until then this opens our listing.
+export const GOOGLE_REVIEW_URL = GOOGLE_MAPS_URL

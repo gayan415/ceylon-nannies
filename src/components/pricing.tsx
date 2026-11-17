@@ -85,6 +85,7 @@ export function Pricing() {
                 We value your choice of Sri Lanka and want to make your time here memorable for life. First-time clients, please reach out — we&apos;d be honored to welcome your family to ours and treat your little ones the way we&apos;d treat our own.
               </p>
               <a
+                data-cta="pricing-welcome"
                 href="https://wa.me/14034044643?text=Hi%20Ceylon%20Nannies!%20I%27m%20a%20first-time%20client%20visiting%20Sri%20Lanka%20—%20I%27d%20love%20to%20learn%20more%20about%20your%20service."
                 target="_blank"
                 rel="noopener noreferrer"
