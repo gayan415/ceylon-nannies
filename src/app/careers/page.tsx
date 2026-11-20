@@ -23,7 +23,7 @@ const HIRING_REGIONS = [
 
 const WHAT_YOULL_DO = [
   'Warm, attentive in-hotel & in-villa childcare',
-  'Care for children from the USA, Canada, Australia, the Netherlands, Israel, the UAE & India',
+  'Care for children from the USA, Canada, Australia, the Netherlands, Israel & the UAE',
   'Travel to hotels, villas & resorts in your area',
   'Deliver safe, professional, thoughtful care',
 ]
@@ -33,7 +33,7 @@ const WHAT_WERE_LOOKING_FOR = [
   { bold: '2+ years childcare experience', rest: ' — raising your own children absolutely counts!' },
   { bold: 'Fluent English', rest: ' — confident, natural communication is essential' },
   { bold: 'Genuine warmth & patience', rest: ' with young children — comfortable caring for babies through age 6' },
-  { bold: 'Able & willing to travel', rest: ' to different hotels and villas in your area' },
+  { bold: 'Able & willing to travel', rest: ' to different hotels and villas' },
   { bold: 'Excellent personal hygiene', rest: ' — clean, well-dressed & organized' },
   { bold: 'Professional & reliable', rest: ' — beautifully presented, punctual, and true to your commitments' },
   { bold: 'First aid or CPR knowledge a strong plus', rest: ' — we\'ll support training for the right person' },
